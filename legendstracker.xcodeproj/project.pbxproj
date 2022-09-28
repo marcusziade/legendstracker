@@ -27,6 +27,7 @@
 		5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873F28E4F3D00098E287 /* MapRotationRequest.swift */; };
 		5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */; };
 		5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */; };
+		5A06874728E4F8C90098E287 /* NewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874628E4F8C90098E287 /* NewsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		5A06873F28E4F3D00098E287 /* MapRotationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationRequest.swift; sourceTree = "<group>"; };
 		5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorRequest.swift; sourceTree = "<group>"; };
 		5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRotationRequest.swift; sourceTree = "<group>"; };
+		5A06874628E4F8C90098E287 /* NewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */,
 				5A06871628E4CC630098E287 /* API */,
+				5A06874528E4F8B60098E287 /* ViewModels */,
 				5A06873428E4E5740098E287 /* Resources */,
 			);
 			path = legendstracker;
@@ -145,6 +148,14 @@
 				5A06873528E4E59E0098E287 /* Keys.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5A06874528E4F8B60098E287 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5A06874628E4F8C90098E287 /* NewsVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 				5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */,
 				5A06873C28E4F19D0098E287 /* ServerStatusRequest.swift in Sources */,
 				5A06873828E4EEA30098E287 /* PlayerRequest.swift in Sources */,
+				5A06874728E4F8C90098E287 /* NewsVM.swift in Sources */,
 				5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */,
 				5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */,
 				5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */,
