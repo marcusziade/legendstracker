@@ -8,11 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		5A0686FD28E4C7BB0098E287 /* legendstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */; };
+		5A06871B28E4CCE20098E287 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871A28E4CCE20098E287 /* News.swift */; };
+		5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */; };
+		5A06872128E4D1CE0098E287 /* StoreProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872028E4D1CE0098E287 /* StoreProductsResponse.swift */; };
+		5A06872328E4D4FD0098E287 /* ServerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872228E4D4FD0098E287 /* ServerStatus.swift */; };
+		5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872428E4D5690098E287 /* PlayerUIDResponse.swift */; };
+		5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872628E4D5A30098E287 /* MapRotationResponse.swift */; };
+		5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */; };
+		5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A0686F928E4C7BB0098E287 /* legendstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legendstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendstrackerApp.swift; sourceTree = "<group>"; };
+		5A06871A28E4CCE20098E287 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPlayer.swift; sourceTree = "<group>"; };
+		5A06872028E4D1CE0098E287 /* StoreProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProductsResponse.swift; sourceTree = "<group>"; };
+		5A06872228E4D4FD0098E287 /* ServerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatus.swift; sourceTree = "<group>"; };
+		5A06872428E4D5690098E287 /* PlayerUIDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUIDResponse.swift; sourceTree = "<group>"; };
+		5A06872628E4D5A30098E287 /* MapRotationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationResponse.swift; sourceTree = "<group>"; };
+		5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorResponse.swift; sourceTree = "<group>"; };
+		5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRotationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +61,33 @@
 		5A0686FB28E4C7BB0098E287 /* legendstracker */ = {
 			isa = PBXGroup;
 			children = (
+				5A06871628E4CC630098E287 /* API */,
 				5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */,
 			);
 			path = legendstracker;
+			sourceTree = "<group>";
+		};
+		5A06871628E4CC630098E287 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5A06871728E4CC6D0098E287 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5A06871728E4CC6D0098E287 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A06871A28E4CCE20098E287 /* News.swift */,
+				5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */,
+				5A06872028E4D1CE0098E287 /* StoreProductsResponse.swift */,
+				5A06872228E4D4FD0098E287 /* ServerStatus.swift */,
+				5A06872428E4D5690098E287 /* PlayerUIDResponse.swift */,
+				5A06872628E4D5A30098E287 /* MapRotationResponse.swift */,
+				5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */,
+				5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A06871B28E4CCE20098E287 /* News.swift in Sources */,
 				5A0686FD28E4C7BB0098E287 /* legendstrackerApp.swift in Sources */,
+				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
+				5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */,
+				5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */,
+				5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */,
+				5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */,
+				5A06872128E4D1CE0098E287 /* StoreProductsResponse.swift in Sources */,
+				5A06872328E4D4FD0098E287 /* ServerStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +294,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"legendstracker/Preview Content\"";
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -276,7 +323,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"legendstracker/Preview Content\"";
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
