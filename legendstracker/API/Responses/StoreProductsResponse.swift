@@ -11,7 +11,7 @@
 
 import Foundation
 
-struct StoreProductsResponse: Codable {
+struct StoreProducts: Codable {
     let title: String
     let desc: String
     let tag: String

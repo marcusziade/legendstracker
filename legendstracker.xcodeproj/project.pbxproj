@@ -20,6 +20,13 @@
 		5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872E28E4DFAA0098E287 /* HTTPError.swift */; };
 		5A06873328E4E4DB0098E287 /* NewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873228E4E4DB0098E287 /* NewsRequest.swift */; };
 		5A06873628E4E59E0098E287 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873528E4E59E0098E287 /* Keys.swift */; };
+		5A06873828E4EEA30098E287 /* PlayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873728E4EEA30098E287 /* PlayerRequest.swift */; };
+		5A06873A28E4F0780098E287 /* StoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873928E4F0780098E287 /* StoreRequest.swift */; };
+		5A06873C28E4F19D0098E287 /* ServerStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873B28E4F19D0098E287 /* ServerStatusRequest.swift */; };
+		5A06873E28E4F3420098E287 /* UIDForPlayerNameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873D28E4F3420098E287 /* UIDForPlayerNameRequest.swift */; };
+		5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06873F28E4F3D00098E287 /* MapRotationRequest.swift */; };
+		5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */; };
+		5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		5A06872E28E4DFAA0098E287 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		5A06873228E4E4DB0098E287 /* NewsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequest.swift; sourceTree = "<group>"; };
 		5A06873528E4E59E0098E287 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		5A06873728E4EEA30098E287 /* PlayerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRequest.swift; sourceTree = "<group>"; };
+		5A06873928E4F0780098E287 /* StoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRequest.swift; sourceTree = "<group>"; };
+		5A06873B28E4F19D0098E287 /* ServerStatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRequest.swift; sourceTree = "<group>"; };
+		5A06873D28E4F3420098E287 /* UIDForPlayerNameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDForPlayerNameRequest.swift; sourceTree = "<group>"; };
+		5A06873F28E4F3D00098E287 /* MapRotationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationRequest.swift; sourceTree = "<group>"; };
+		5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorRequest.swift; sourceTree = "<group>"; };
+		5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRotationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				5A06873228E4E4DB0098E287 /* NewsRequest.swift */,
+				5A06873728E4EEA30098E287 /* PlayerRequest.swift */,
+				5A06873928E4F0780098E287 /* StoreRequest.swift */,
+				5A06873B28E4F19D0098E287 /* ServerStatusRequest.swift */,
+				5A06873D28E4F3420098E287 /* UIDForPlayerNameRequest.swift */,
+				5A06873F28E4F3D00098E287 /* MapRotationRequest.swift */,
+				5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */,
+				5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -202,10 +223,17 @@
 				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
 				5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */,
 				5A06873328E4E4DB0098E287 /* NewsRequest.swift in Sources */,
+				5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */,
+				5A06873C28E4F19D0098E287 /* ServerStatusRequest.swift in Sources */,
+				5A06873828E4EEA30098E287 /* PlayerRequest.swift in Sources */,
+				5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */,
+				5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */,
 				5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */,
+				5A06873A28E4F0780098E287 /* StoreRequest.swift in Sources */,
 				5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */,
 				5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */,
 				5A06872128E4D1CE0098E287 /* StoreProductsResponse.swift in Sources */,
+				5A06873E28E4F3420098E287 /* UIDForPlayerNameRequest.swift in Sources */,
 				5A06872328E4D4FD0098E287 /* ServerStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
