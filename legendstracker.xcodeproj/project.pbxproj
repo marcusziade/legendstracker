@@ -70,12 +70,12 @@
 		5A06871628E4CC630098E287 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				5A06871728E4CC6D0098E287 /* Models */,
+				5A06871728E4CC6D0098E287 /* Responses */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		5A06871728E4CC6D0098E287 /* Models */ = {
+		5A06871728E4CC6D0098E287 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
 				5A06871A28E4CCE20098E287 /* News.swift */,
@@ -87,7 +87,7 @@
 				5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */,
 				5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */,
 			);
-			path = Models;
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
