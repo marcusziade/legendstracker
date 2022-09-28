@@ -16,6 +16,8 @@
 		5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872628E4D5A30098E287 /* MapRotationResponse.swift */; };
 		5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */; };
 		5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */; };
+		5A06872D28E4DF080098E287 /* ApexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872C28E4DF080098E287 /* ApexService.swift */; };
+		5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872E28E4DFAA0098E287 /* HTTPError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		5A06872628E4D5A30098E287 /* MapRotationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationResponse.swift; sourceTree = "<group>"; };
 		5A06872828E4D5FC0098E287 /* ApexPredatorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorResponse.swift; sourceTree = "<group>"; };
 		5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRotationResponse.swift; sourceTree = "<group>"; };
+		5A06872C28E4DF080098E287 /* ApexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexService.swift; sourceTree = "<group>"; };
+		5A06872E28E4DFAA0098E287 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		5A06871628E4CC630098E287 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5A06872C28E4DF080098E287 /* ApexService.swift */,
+				5A06873028E4DFAE0098E287 /* Models */,
 				5A06871728E4CC6D0098E287 /* Responses */,
 			);
 			path = API;
@@ -88,6 +94,14 @@
 				5A06872A28E4D6490098E287 /* CraftingRotationResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		5A06873028E4DFAE0098E287 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A06872E28E4DFAA0098E287 /* HTTPError.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A06872D28E4DF080098E287 /* ApexService.swift in Sources */,
+				5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */,
 				5A06871B28E4CCE20098E287 /* News.swift in Sources */,
 				5A0686FD28E4C7BB0098E287 /* legendstrackerApp.swift in Sources */,
 				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
