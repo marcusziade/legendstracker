@@ -9,12 +9,13 @@
 //   let serverStatus = try? newJSONDecoder().decode(ServerStatus.self, from: jsonData)
 
 import Foundation
+import SwiftUI
 
 struct ServerStatus: Codable {
-    let originLogin: ApexOauthCrossplay
-    let eaNovafusion: ApexOauthCrossplay
-    let eaAccounts: ApexOauthCrossplay
-    let apexOauthCrossplay: ApexOauthCrossplay
+    let originLogin: Servers
+    let eaNovafusion: Servers
+    let eaAccounts: Servers
+    let apexOauthCrossplay: Servers
     let selfCoreTest: SelfCoreTest
     let otherPlatforms: OtherPlatforms
     
@@ -28,7 +29,7 @@ struct ServerStatus: Codable {
     }
 }
 
-struct ApexOauthCrossplay: Codable {
+struct Servers: Codable {
     let euWest: Region
     let euEast: Region
     let usWest: Region
@@ -66,6 +67,22 @@ enum Status: String, Codable {
     case down = "DOWN"
     case slow = "SLOW"
     case up = "UP"
+    
+    var color: Color {
+        switch self {
+        case .down: return .red
+        case .slow: return .yellow
+        case .up:   return .green
+        }
+    }
+    
+    var icon: String {
+        switch self {
+        case .down: return "xmark.icloud.fill"
+        case .slow: return "exclamationmark.icloud.fill"
+        case .up:   return "checkmark.icloud.fill"
+        }
+    }
 }
 
 struct OtherPlatforms: Codable {

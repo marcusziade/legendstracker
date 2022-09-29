@@ -29,7 +29,6 @@ final class ServerStatusVM: ObservableObject {
     
     @MainActor private func serverStatus() async {
         do {
-            print(try await service.serverStatus())
             state = .result(status: try await service.serverStatus())
         } catch let error as HTTPError {
             state = .error(message: error.caption)

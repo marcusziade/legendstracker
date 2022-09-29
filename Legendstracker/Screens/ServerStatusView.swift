@@ -21,7 +21,7 @@ struct ServerStatusView: View {
             Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
             
         case .result(status: let status):
-            Text(status.otherPlatforms.playstationNetwork.status.rawValue)
+            ServerStatusRegionsView(status: status)
         }
     }
 }
