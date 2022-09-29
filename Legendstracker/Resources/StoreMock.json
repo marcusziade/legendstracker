@@ -1,0 +1,218 @@
+[
+    {
+        "title": "Haute Drop Bundle",
+        "desc": "",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664903228,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 2500
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_wattson_s07e02_legendary_01",
+                "name": "Haute Drop",
+                "quantity": 1
+            },
+            {
+                "ref": "weapon_skin_g7_s07e02_legendary_01",
+                "name": "Attrition",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_haute_drop_bundle",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_bund_hautedrop_3qo4.png"
+    },
+    {
+        "title": "Angel City Hustler",
+        "desc": "Skin",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664557628,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 1800
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_mirage_legendary_03",
+                "name": "Angel City Hustler",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_angel_city_hustler",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_cskin_mira_lgnd_03_k9t9.png"
+    },
+    {
+        "title": "Center Stage",
+        "desc": "Skin",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664557628,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Legend Tokens",
+                "quantity": 10500
+            },
+            {
+                "ref": "Apex Coins",
+                "quantity": 1800
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_mirage_legendary_shop_03",
+                "name": "Center Stage",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_center_stage",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_cskin_mira_lgnd_shop_03_8jt7.png"
+    },
+    {
+        "title": "Red Shift",
+        "desc": "Skin",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664557628,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Legend Tokens",
+                "quantity": 6500
+            },
+            {
+                "ref": "Apex Coins",
+                "quantity": 1800
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_octane_legendary_shop_01",
+                "name": "Red Shift",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_red_shift",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_cskin_octa_lgnd_shop_01_0y66.png"
+    },
+    {
+        "title": "El Diablo",
+        "desc": "Skin",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664557628,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 1800
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_octane_legendary_01",
+                "name": "El Diablo",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_el_diablo",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_cskin_octa_lgnd_01_2k02.png"
+    },
+    {
+        "title": "Lost Dynasty",
+        "desc": "Skin",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664903228,
+        "shopType": "shop",
+        "originalPrice": 1800,
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 1250
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_gibraltar_s08e01_legendary_01",
+                "name": "Lost Dynasty",
+                "quantity": 1
+            }
+        ],
+        "offerID": "220927_lost_dynasty",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_cskin_gibr_s08e01_lgnd_01_9mq3.png"
+    },
+    {
+        "title": "Pearly White Bonus Bundle",
+        "desc": "",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664903228,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 1000
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_fuse_s08e02_epic_01",
+                "name": "Pearly White",
+                "quantity": 1
+            },
+            {
+                "ref": "pack_cosmetic_rare",
+                "name": "Apex Pack",
+                "quantity": 2
+            }
+        ],
+        "offerID": "220927_pearly_white_bonus_bundle",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_bund_pearlywhite_bonus_w968.png"
+    },
+    {
+        "title": "Moneymaker Bonus Bundle",
+        "desc": "",
+        "tag": "",
+        "purchaseLimit": 1,
+        "isAvailable": true,
+        "expireTimestamp": 1664903228,
+        "shopType": "shop",
+        "pricing": [
+            {
+                "ref": "Apex Coins",
+                "quantity": 1000
+            }
+        ],
+        "content": [
+            {
+                "ref": "character_skin_mirage_s06e01_epic_01",
+                "name": "Moneymaker",
+                "quantity": 1
+            },
+            {
+                "ref": "pack_cosmetic_rare",
+                "name": "Apex Pack",
+                "quantity": 2
+            }
+        ],
+        "offerID": "220927_moneymaker_bonus_bundle",
+        "asset": "https:\/\/shop-cdn.mozambiquehe.re\/dl_store_s14_1_bund_moneymaker_bonus_tcd5.png"
+    }
+]

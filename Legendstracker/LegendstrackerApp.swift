@@ -10,11 +10,10 @@ import SwiftUI
 @main
 struct LegendstrackerApp: App {
     
-    @Environment(\.scenePhase) var scenePhase
-    
     @StateObject var newsViewModel = NewsVM(service: ApexService())
     @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
     @StateObject var mapRotationViewModel = MapRotationVM(service: ApexService())
+    @StateObject var storeViewModel = StoreVM(service: ApexService())
     
     var body: some Scene {
         WindowGroup {
@@ -31,23 +30,10 @@ struct LegendstrackerApp: App {
                     .tabItem {
                         Label("Map", systemImage: "map")
                     }
-            }
-            .onChange(of: scenePhase) { NewValue in
-                switch scenePhase {
-                case .background:
-                    break
-                case .inactive:
-                    break
-                case .active:
-                    Task {
-                        [
-                            await newsViewModel.refresh(),
-                            await serverStatusViewModel.refresh(),
-                        ]
+                StoreView(model: storeViewModel)
+                    .tabItem {
+                        Label("Store", systemImage: "bag")
                     }
-                @unknown default:
-                    fatalError()
-                }
             }
         }
     }
