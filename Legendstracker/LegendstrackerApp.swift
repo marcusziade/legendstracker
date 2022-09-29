@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct LegendstrackerApp: App {
     
+    @StateObject var searchPlayerViewModel = SearchPlayerVM(service: ApexService())
     @StateObject var newsViewModel = NewsVM(service: ApexService())
     @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
     @StateObject var mapRotationViewModel = MapRotationVM(service: ApexService())
@@ -18,6 +19,10 @@ struct LegendstrackerApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                SearchPlayerView(model: searchPlayerViewModel)
+                    .tabItem {
+                        Label("Search", systemImage: "doc.text.magnifyingglass")
+                    }
                 NewsView(model: newsViewModel)
                     .tabItem {
                         Label("News", systemImage: "newspaper")

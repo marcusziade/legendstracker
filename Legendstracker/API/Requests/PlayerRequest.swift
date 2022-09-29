@@ -15,7 +15,7 @@ extension ApexService {
         components.queryItems = [
             URLQueryItem(name: "auth", value: Keys.apiKey.rawValue),
             URLQueryItem(name: "player", value: "Guitaripod"),
-            URLQueryItem(name: "platform", value: "pc"),
+            URLQueryItem(name: "platform", value: "PC"),
         ]
 
         do {
@@ -32,7 +32,7 @@ extension ApexService {
         components.queryItems = [
             URLQueryItem(name: "auth", value: Keys.apiKey.rawValue),
             URLQueryItem(name: "uid", value: "2297593921"),
-            URLQueryItem(name: "platform", value: "pc"),
+            URLQueryItem(name: "platform", value: "PC"),
         ]
 
         do {
@@ -41,5 +41,10 @@ extension ApexService {
         } catch {
             throw error
         }
+    }
+    
+    var playerMock: ApexPlayer {
+        let p: ApexPlayer = try! getMockData(forFileName: "ApexPlayerMock", filetype: "json")
+        return p
     }
 }

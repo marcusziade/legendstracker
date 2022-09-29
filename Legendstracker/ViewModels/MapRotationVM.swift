@@ -29,6 +29,7 @@ final class MapRotationVM: ObservableObject {
     private let service: ApexService
     
     @MainActor private func mapRotation() async {
+        state = .loading
         do {
             debugPrint(try await service.mapRotation())
             state = .result(rotation:  try await service.mapRotation())

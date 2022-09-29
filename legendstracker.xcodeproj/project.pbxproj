@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5A012ED028E60DCF001AB519 /* StoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A012ECF28E60DCF001AB519 /* StoreRow.swift */; };
 		5A012ED228E61941001AB519 /* newsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A012ED128E61941001AB519 /* newsMock.json */; };
+		5A012ED428E61BF5001AB519 /* ApexPlayerMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */; };
+		5A012ED628E61C47001AB519 /* SearchPlayerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A012ED528E61C47001AB519 /* SearchPlayerVM.swift */; };
+		5A012ED828E61D1C001AB519 /* SearchPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A012ED728E61D1C001AB519 /* SearchPlayerView.swift */; };
 		5A0686FD28E4C7BB0098E287 /* LegendstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0686FC28E4C7BB0098E287 /* LegendstrackerApp.swift */; };
 		5A06871B28E4CCE20098E287 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871A28E4CCE20098E287 /* NewsArticle.swift */; };
 		5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */; };
@@ -59,6 +62,9 @@
 /* Begin PBXFileReference section */
 		5A012ECF28E60DCF001AB519 /* StoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRow.swift; sourceTree = "<group>"; };
 		5A012ED128E61941001AB519 /* newsMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = newsMock.json; sourceTree = "<group>"; };
+		5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApexPlayerMock.json; sourceTree = "<group>"; };
+		5A012ED528E61C47001AB519 /* SearchPlayerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlayerVM.swift; sourceTree = "<group>"; };
+		5A012ED728E61D1C001AB519 /* SearchPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlayerView.swift; sourceTree = "<group>"; };
 		5A0686F928E4C7BB0098E287 /* legendstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legendstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0686FC28E4C7BB0098E287 /* LegendstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendstrackerApp.swift; sourceTree = "<group>"; };
 		5A06871A28E4CCE20098E287 /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
@@ -206,6 +212,7 @@
 				5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */,
 				5A80860028E60AC900691068 /* StoreMock.json */,
 				5A012ED128E61941001AB519 /* newsMock.json */,
+				5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 				5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */,
 				5AC82D9828E56FE800A21051 /* MapRotationVM.swift */,
 				5A8085FE28E609F200691068 /* StoreVM.swift */,
+				5A012ED528E61C47001AB519 /* SearchPlayerVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */,
 				5AC82D9A28E58F9000A21051 /* MapRotationView.swift */,
 				5A80860228E60B1C00691068 /* StoreView.swift */,
+				5A012ED728E61D1C001AB519 /* SearchPlayerView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -327,6 +336,7 @@
 				5A80860128E60AC900691068 /* StoreMock.json in Resources */,
 				5A012ED228E61941001AB519 /* newsMock.json in Resources */,
 				5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */,
+				5A012ED428E61BF5001AB519 /* ApexPlayerMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +356,9 @@
 				5AC82D9128E563D300A21051 /* EAAccountsScrollView.swift in Sources */,
 				5A06871B28E4CCE20098E287 /* NewsArticle.swift in Sources */,
 				5A06875528E5346A0098E287 /* SafariView.swift in Sources */,
+				5A012ED628E61C47001AB519 /* SearchPlayerVM.swift in Sources */,
 				5A0686FD28E4C7BB0098E287 /* LegendstrackerApp.swift in Sources */,
+				5A012ED828E61D1C001AB519 /* SearchPlayerView.swift in Sources */,
 				5A06873628E4E59E0098E287 /* Keys.swift in Sources */,
 				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
 				5AC82DA228E5A96000A21051 /* View+Ext.swift in Sources */,

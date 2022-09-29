@@ -1,0 +1,341 @@
+{
+    "global": {
+        "name": "ELPRESADOR",
+        "uid": 2297593921,
+        "avatar": "",
+        "platform": "PC",
+        "level": 169,
+        "toNextLevelPercent": 85,
+        "internalUpdateCount": 3403,
+        "bans": {
+            "isActive": false,
+            "remainingSeconds": 0,
+            "last_banReason": "COMPETITIVE_DODGE_COOLDOWN"
+        },
+        "rank": {
+            "rankScore": 1084,
+            "rankName": "Bronze",
+            "rankDiv": 4,
+            "ladderPosPlatform": -1,
+            "rankImg": "https:\/\/api.mozambiquehe.re\/assets\/ranks\/bronze4.png",
+            "rankedSeason": "season14_split_2"
+        },
+        "arena": {
+            "rankScore": 0,
+            "rankName": "Unranked",
+            "rankDiv": 0,
+            "ladderPosPlatform": -1,
+            "rankImg": "https:\/\/api.mozambiquehe.re\/assets\/ranks\/unranked4.png",
+            "rankedSeason": "arenas14_split_2"
+        },
+        "battlepass": {
+            "level": "75",
+            "history": {
+                "season1": -1,
+                "season2": -1,
+                "season3": -1,
+                "season4": -1,
+                "season5": -1,
+                "season6": -1,
+                "season7": -1,
+                "season8": -1,
+                "season9": -1,
+                "season10": -1,
+                "season11": -1,
+                "season12": -1,
+                "season13": -1,
+                "season14": 0
+            }
+        },
+        "internalParsingVersion": 2,
+        "badges": [
+            {
+                "name": "Beast of Prey Exterminator",
+                "value": 0
+            }
+        ],
+        "levelPrestige": 0
+    },
+    "realtime": {
+        "lobbyState": "open",
+        "isOnline": 0,
+        "isInGame": 0,
+        "canJoin": 0,
+        "partyFull": 0,
+        "selectedLegend": "Bloodhound",
+        "currentState": "offline",
+        "currentStateSinceTimestamp": -1,
+        "currentStateAsText": "Offline"
+    },
+    "legends": {
+        "selected": {
+            "LegendName": "Bloodhound",
+            "data": [
+                {
+                    "name": "BR Kills",
+                    "value": 183,
+                    "key": "specialEvent_kills",
+                    "global": false
+                },
+                {
+                    "name": "Eye: Enemies scanned",
+                    "value": 442,
+                    "key": "enemies_scanned",
+                    "global": false
+                },
+                {
+                    "name": "BR Damage",
+                    "value": 67257,
+                    "key": "damage",
+                    "global": false
+                }
+            ],
+            "gameInfo": {
+                "skin": "Neural Net",
+                "skinRarity": "Epic",
+                "frame": "Ready to Strike",
+                "frameRarity": "Legendary",
+                "pose": "Unbreakable Bond",
+                "poseRarity": "Epic",
+                "intro": "Only when the gods will it",
+                "introRarity": "Rare",
+                "badges": [
+                    {
+                        "name": "Beast of Prey Exterminator",
+                        "value": 0,
+                        "category": "Account Badges"
+                    },
+                    {
+                        "name": "Bloodhound's Wrath",
+                        "value": 0,
+                        "category": "Bloodhound"
+                    },
+                    {
+                        "name": "Hunted Level: Season 14",
+                        "value": 77,
+                        "category": "Account Badges"
+                    }
+                ]
+            },
+            "ImgAssets": {
+                "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/bloodhound.png",
+                "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/bloodhound.jpg"
+            }
+        },
+        "all": {
+            "Revenant": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/revenant.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/revenant.jpg"
+                }
+            },
+            "Crypto": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/crypto.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/crypto.jpg"
+                }
+            },
+            "Horizon": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/horizon.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/horizon.jpg"
+                }
+            },
+            "Gibraltar": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/gibraltar.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/gibraltar.jpg"
+                }
+            },
+            "Wattson": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/wattson.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/wattson.jpg"
+                }
+            },
+            "Fuse": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/fuse.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/fuse.jpg"
+                }
+            },
+            "Bangalore": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/bangalore.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/bangalore.jpg"
+                }
+            },
+            "Wraith": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/wraith.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/wraith.jpg"
+                }
+            },
+            "Octane": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/octane.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/octane.jpg"
+                }
+            },
+            "Bloodhound": {
+                "data": [
+                    {
+                        "name": "BR Damage",
+                        "value": 67257,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 1107482,
+                            "topPercent": 65.19
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 179387,
+                            "topPercent": 64.67
+                        }
+                    },
+                    {
+                        "name": "Eye: Enemies scanned",
+                        "value": 442,
+                        "key": "enemies_scanned",
+                        "rank": {
+                            "rankPos": 878355,
+                            "topPercent": 84.83
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 139845,
+                            "topPercent": 83.55
+                        }
+                    },
+                    {
+                        "name": "BR Kills",
+                        "value": 183,
+                        "key": "specialEvent_kills",
+                        "rank": {
+                            "rankPos": 909098,
+                            "topPercent": 68.21
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 135733,
+                            "topPercent": 68.04
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Bloodhound's Wrath",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/bloodhound.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/bloodhound.jpg"
+                }
+            },
+            "Caustic": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/caustic.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/caustic.jpg"
+                }
+            },
+            "Lifeline": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/lifeline.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/lifeline.jpg"
+                }
+            },
+            "Pathfinder": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/pathfinder.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/pathfinder.jpg"
+                }
+            },
+            "Loba": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/loba.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/loba.jpg"
+                }
+            },
+            "Mirage": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/mirage.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/mirage.jpg"
+                }
+            },
+            "Rampart": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/rampart.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/rampart.jpg"
+                }
+            },
+            "Valkyrie": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/valkyrie.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/valkyrie.jpg"
+                }
+            },
+            "Seer": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/seer.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/seer.jpg"
+                }
+            },
+            "Ash": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/ash.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/ash.jpg"
+                }
+            },
+            "Mad Maggie": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/mad maggie.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/mad maggie.jpg"
+                }
+            },
+            "Newcastle": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/newcastle.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/newcastle.jpg"
+                }
+            },
+            "Vantage": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/vantage.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/vantage.jpg"
+                }
+            }
+        }
+    },
+    "mozambiquehere_internal": {
+        "isNewToDB": false,
+        "claimedBy": "1664382516",
+        "APIAccessType": "BASIC",
+        "ClusterID": "5",
+        "rate_limit": {
+            "max_per_second": 2,
+            "current_req": null
+        },
+        "clusterSrv": "MAIN-CLUSTER"
+    },
+    "ALS": {
+        "isALSDataEnabled": false
+    },
+    "total": {
+        "damage": {
+            "name": "BR Damage",
+            "value": 67257
+        },
+        "enemies_scanned": {
+            "name": "Eye: Enemies scanned",
+            "value": 442
+        },
+        "specialEvent_kills": {
+            "name": "BR Kills",
+            "value": 183
+        },
+        "kd": {
+            "value": "-1",
+            "name": "KD"
+        }
+    }
+}

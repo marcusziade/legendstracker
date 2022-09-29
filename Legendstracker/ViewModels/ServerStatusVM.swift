@@ -30,6 +30,7 @@ final class ServerStatusVM: ObservableObject {
     private let service: ApexService
     
     @MainActor private func serverStatus() async {
+        state = .loading
         do {
             state = .result(status: try await service.serverStatus())
         } catch let error as HTTPError {

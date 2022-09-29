@@ -30,6 +30,7 @@ final class StoreVM: ObservableObject {
     private let service: ApexService
     
     @MainActor private func storeProducts() async {
+        state = .loading
         do {
             state = .result(store: try await service.store())
         } catch let error as HTTPError {
