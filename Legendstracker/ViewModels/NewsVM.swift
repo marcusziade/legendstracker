@@ -24,6 +24,8 @@ final class NewsVM: ObservableObject {
         Task { await news() }
     }
     
+    func refresh() async { await news() }
+    
     // MARK: Private
     
     private let service: ApexService

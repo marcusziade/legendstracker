@@ -23,6 +23,8 @@ final class ServerStatusVM: ObservableObject {
         Task { await serverStatus() }
     }
     
+    func refresh() async { await serverStatus() }
+    
     // MARK: Private
     
     private let service: ApexService

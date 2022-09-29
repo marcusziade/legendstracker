@@ -31,6 +31,7 @@ struct NewsView: View {
                         }
                     }
                 }
+                .refreshable { await model.refresh() }
                 .navigationTitle("News")
             }
         }
