@@ -9,21 +9,17 @@ import SwiftUI
 
 @main
 struct legendstrackerApp: App {
+    
+    @StateObject var newsViewModel = NewsVM(service: ApexService())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                NewsView(model: newsViewModel)
+                    .tabItem {
+                        Label("News", systemImage: "newspaper")
+                    }
+            }
         }
-    }
-}
-
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
     }
 }

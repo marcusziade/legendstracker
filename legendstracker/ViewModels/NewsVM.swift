@@ -16,18 +16,22 @@ final class NewsVM: ObservableObject {
     }
     
     @Published var state: State = .loading
+    @Published var showSafari = false
     
-    init() {
+    init(service: ApexService) {
+        self.service = service
+        
         Task { await news() }
     }
     
     // MARK: Private
     
-    private let service = ApexService()
+    private let service: ApexService
     
     @MainActor private func news() async {
         state = .loading
         do {
+            print(try await service.news())
             state = try await .result(news: service.news())
         } catch let error as HTTPError {
             state = .error(message: error.caption)
@@ -36,5 +40,11 @@ final class NewsVM: ObservableObject {
             state = .error(message: error.localizedDescription)
             debugPrint(error)
         }
+    }
+    
+    static var mock: NewsVM {
+        let vm = NewsVM(service: ApexService())
+        vm.state = .result(news: News.mocks)
+        return vm
     }
 }
