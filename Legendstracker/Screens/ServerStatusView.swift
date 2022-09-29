@@ -23,6 +23,7 @@ struct ServerStatusView: View {
                 
             case .result(status: let status):
                 ServerStatusRegionsView(status: status)
+                    .navigationBarHidden(true)
                     .refreshable { await model.refresh() }
             }
         }
