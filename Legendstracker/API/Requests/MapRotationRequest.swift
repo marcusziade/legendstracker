@@ -23,4 +23,9 @@ extension ApexService {
             throw error
         }
     }
+    
+    var mapRotation_Mock: MapRotationResponse {
+        let r: MapRotationResponse = try! getMockData(forFileName: "MapRotationResponse_Mock", filetype: "json")
+        return r
+    }
 }

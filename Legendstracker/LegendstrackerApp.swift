@@ -12,6 +12,7 @@ struct LegendstrackerApp: App {
     
     @StateObject var newsViewModel = NewsVM(service: ApexService())
     @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
+    @StateObject var mapRotationViewModel = MapRotationVM(service: ApexService())
     
     var body: some Scene {
         WindowGroup {
@@ -23,6 +24,10 @@ struct LegendstrackerApp: App {
                 ServerStatusView(model: serverStatusViewModel)
                     .tabItem {
                         Label("Status", systemImage: "network")
+                    }
+                MapRotationView(model: mapRotationViewModel)
+                    .tabItem {
+                        Label("Map", systemImage: "map")
                     }
             }
         }

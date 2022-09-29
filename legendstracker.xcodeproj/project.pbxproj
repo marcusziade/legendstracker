@@ -44,6 +44,11 @@
 		5AC82D9328E5641A00A21051 /* ApexCrossPlayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D9228E5641A00A21051 /* ApexCrossPlayScrollView.swift */; };
 		5AC82D9528E5646200A21051 /* CoreStatusScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D9428E5646200A21051 /* CoreStatusScrollView.swift */; };
 		5AC82D9728E5664B00A21051 /* OtherPlatformsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D9628E5664B00A21051 /* OtherPlatformsScrollView.swift */; };
+		5AC82D9928E56FE800A21051 /* MapRotationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D9828E56FE800A21051 /* MapRotationVM.swift */; };
+		5AC82D9B28E58F9000A21051 /* MapRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D9A28E58F9000A21051 /* MapRotationView.swift */; };
+		5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */; };
+		5AC82DA228E5A96000A21051 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA128E5A96000A21051 /* View+Ext.swift */; };
+		5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		5AC82D9228E5641A00A21051 /* ApexCrossPlayScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexCrossPlayScrollView.swift; sourceTree = "<group>"; };
 		5AC82D9428E5646200A21051 /* CoreStatusScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreStatusScrollView.swift; sourceTree = "<group>"; };
 		5AC82D9628E5664B00A21051 /* OtherPlatformsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPlatformsScrollView.swift; sourceTree = "<group>"; };
+		5AC82D9828E56FE800A21051 /* MapRotationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationVM.swift; sourceTree = "<group>"; };
+		5AC82D9A28E58F9000A21051 /* MapRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationView.swift; sourceTree = "<group>"; };
+		5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapRotationResponse_Mock.json; sourceTree = "<group>"; };
+		5AC82DA128E5A96000A21051 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				5A06874B28E5284B0098E287 /* Views */,
 				5A06874828E523C40098E287 /* Screens */,
 				5A06874528E4F8B60098E287 /* ViewModels */,
+				5AC82DA028E5A95100A21051 /* Extensions */,
 				5A06873428E4E5740098E287 /* Resources */,
 			);
 			path = Legendstracker;
@@ -182,6 +193,7 @@
 			children = (
 				5A06873528E4E59E0098E287 /* Keys.swift */,
 				5A6FAFAD28E5484900616E00 /* ServerStatusMock.json */,
+				5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +203,7 @@
 			children = (
 				5A06874628E4F8C90098E287 /* NewsVM.swift */,
 				5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */,
+				5AC82D9828E56FE800A21051 /* MapRotationVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 			children = (
 				5A06874928E523D40098E287 /* NewsView.swift */,
 				5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */,
+				5AC82D9A28E58F9000A21051 /* MapRotationView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -217,8 +231,17 @@
 				5AC82D9228E5641A00A21051 /* ApexCrossPlayScrollView.swift */,
 				5AC82D9428E5646200A21051 /* CoreStatusScrollView.swift */,
 				5AC82D9628E5664B00A21051 /* OtherPlatformsScrollView.swift */,
+				5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5AC82DA028E5A95100A21051 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AC82DA128E5A96000A21051 /* View+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A6FAFAE28E5484900616E00 /* ServerStatusMock.json in Resources */,
+				5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC82D8F28E5634B00A21051 /* EANovaFusionScrollView.swift in Sources */,
+				5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */,
 				5A06872D28E4DF080098E287 /* ApexService.swift in Sources */,
 				5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */,
 				5A06874A28E523D40098E287 /* NewsView.swift in Sources */,
@@ -307,6 +332,7 @@
 				5A0686FD28E4C7BB0098E287 /* LegendstrackerApp.swift in Sources */,
 				5A06873628E4E59E0098E287 /* Keys.swift in Sources */,
 				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
+				5AC82DA228E5A96000A21051 /* View+Ext.swift in Sources */,
 				5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */,
 				5A06873328E4E4DB0098E287 /* NewsRequest.swift in Sources */,
 				5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */,
@@ -323,6 +349,7 @@
 				5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */,
 				5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */,
 				5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */,
+				5AC82D9928E56FE800A21051 /* MapRotationVM.swift in Sources */,
 				5A6FAFAC28E546ED00616E00 /* ServerStatusView.swift in Sources */,
 				5A06875328E52E870098E287 /* ArticleRow.swift in Sources */,
 				5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */,
@@ -331,6 +358,7 @@
 				5AC82D9328E5641A00A21051 /* ApexCrossPlayScrollView.swift in Sources */,
 				5A06873E28E4F3420098E287 /* UIDForPlayerNameRequest.swift in Sources */,
 				5A06872328E4D4FD0098E287 /* ServerStatus.swift in Sources */,
+				5AC82D9B28E58F9000A21051 /* MapRotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

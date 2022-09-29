@@ -33,6 +33,7 @@ final class ServerStatusVM: ObservableObject {
         } catch let error as HTTPError {
             state = .error(message: error.caption)
         } catch {
+            debugPrint(error)
             state = .error(message: error.localizedDescription)
         }
     }
