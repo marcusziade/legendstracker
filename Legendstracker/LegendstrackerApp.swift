@@ -19,9 +19,13 @@ struct LegendstrackerApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                SearchPlayerView(model: searchPlayerViewModel)
+//                SearchPlayerView(model: searchPlayerViewModel)
+//                    .tabItem {
+//                        Label("Search", systemImage: "doc.text.magnifyingglass")
+//                    }
+                NewsVCView(model: newsViewModel)
                     .tabItem {
-                        Label("Search", systemImage: "doc.text.magnifyingglass")
+                        Label("News UIKit", systemImage: "newspaper.fill")
                     }
                 NewsView(model: newsViewModel)
                     .tabItem {
@@ -42,4 +46,17 @@ struct LegendstrackerApp: App {
             }
         }
     }
+}
+
+struct NewsVCView: UIViewControllerRepresentable {
+
+    let model: NewsVM
+
+    func makeUIViewController(context: Context) -> some NavigationController {
+        let vm = model
+        let vc = NewsVC(model: vm)
+        return NavigationController(rootVC: vc)
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
 }
