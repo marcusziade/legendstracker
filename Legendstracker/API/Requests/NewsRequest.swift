@@ -21,9 +21,6 @@ extension ApexService {
     /// To obtain a list of news articles
     private var newsURL: URL? {
         components.path = "/news"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
-        ]
         return components.url
     }
     

@@ -12,9 +12,6 @@ extension ApexService {
     /// Get the latest Apex predators.
     func apexPredators() async throws -> ApexPredatorResponse {
         components.path = "/predator"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
-        ]
         
         do {
             let predator: ApexPredatorResponse = try await request(with: components.url)

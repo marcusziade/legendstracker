@@ -12,9 +12,6 @@ extension ApexService {
     /// Get the crafting rotation.
     func craftingRotation() async throws -> CraftingRotationResponse {
         components.path = "/crafting"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
-        ]
         
         do {
             let rotation: CraftingRotationResponse = try await request(with: components.url)

@@ -22,15 +22,17 @@ final class SearchPlayerVM: ObservableObject {
     init(service: ApexService) {
         self.service = service
         
+        Task { await player() }
+
         $searchQuery
             .dropFirst()
-            .debounce(for: 0.2, scheduler: DispatchQueue.main)
-            .sink { [unowned self] _ in
-                Task { await refresh() }
+            .debounce(for: 0.4, scheduler: RunLoop.main)
+            .sink { [unowned self] query in
+                if !query.isEmpty {
+                    Task { await refresh() }
+                }
             }
             .store(in: &cancellables)
-        
-        Task { await player() }
     }
     
     func refresh() async { await player() }

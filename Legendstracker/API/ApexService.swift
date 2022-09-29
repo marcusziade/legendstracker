@@ -14,6 +14,7 @@ final class ApexService {
         var c = URLComponents()
         c.scheme = "https"
         c.host = "api.mozambiquehe.re"
+        c.queryItems = [URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)]
         return c
     }()
     

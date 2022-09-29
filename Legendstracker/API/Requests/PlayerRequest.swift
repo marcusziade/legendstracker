@@ -12,11 +12,10 @@ extension ApexService {
     /// To obtain a `Player` for name.
     func player(forName name: String) async throws -> ApexPlayer {
         components.path = "/bridge"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue),
+        components.queryItems?.append(contentsOf: [
             URLQueryItem(name: "player", value: "Guitaripod"),
             URLQueryItem(name: "platform", value: "PC"),
-        ]
+        ])
 
         do {
             let player: ApexPlayer = try await request(with: components.url)

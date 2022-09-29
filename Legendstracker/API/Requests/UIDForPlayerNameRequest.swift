@@ -12,9 +12,6 @@ extension ApexService {
     /// Get player UID for given name.
     func uid(for name: String) async throws -> PlayerUIDResponse {
         components.path = "/nametouid"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
-        ]
         
         do {
             let uid: PlayerUIDResponse = try await request(with: components.url)

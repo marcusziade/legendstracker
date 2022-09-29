@@ -12,9 +12,6 @@ extension ApexService {
     /// Get latest store items.
     func store() async throws -> [StoreProduct] {
         components.path = "/store"
-        components.queryItems = [
-            URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
-        ]
         
         do {
             let store: [StoreProduct] = try await request(with: components.url)
