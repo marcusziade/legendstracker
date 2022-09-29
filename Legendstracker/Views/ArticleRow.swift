@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ArticleRow: View {
     
-    let article: News
+    let article: NewsArticle
     
     var body: some View {
         VStack(spacing: 8) {
@@ -36,7 +36,7 @@ struct ArticleRow: View {
 
 struct ArticleRow_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleRow(article: News.mocks.first!)
+        ArticleRow(article: ApexService().newsMock.first!)
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }

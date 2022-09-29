@@ -11,7 +11,7 @@ final class NewsVM: ObservableObject {
     
     enum State {
         case loading
-        case result(news: [News])
+        case result(news: [NewsArticle])
         case error(message: String)
     }
     
@@ -45,7 +45,7 @@ final class NewsVM: ObservableObject {
     
     static var mock: NewsVM {
         let vm = NewsVM(service: ApexService())
-        vm.state = .result(news: News.mocks)
+        vm.state = .result(news: ApexService().newsMock)
         return vm
     }
 }

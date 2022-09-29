@@ -9,9 +9,9 @@ import Foundation
 
 extension ApexService {
     
-    func news() async throws -> [News] {
+    func news() async throws -> [NewsArticle] {
         do {
-            let news: [News] = try await request(with: newsURL)
+            let news: [NewsArticle] = try await request(with: newsURL)
             return news
         } catch {
             throw error
@@ -25,5 +25,10 @@ extension ApexService {
             URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
         ]
         return components.url
+    }
+    
+    var newsMock: [NewsArticle] {
+        let news: [NewsArticle] = try! getMockData(forFileName: "newsMock", filetype: "json")
+        return news
     }
 }
