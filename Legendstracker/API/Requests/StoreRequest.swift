@@ -1,6 +1,6 @@
 //
-//  ServerStatusRequest.swift
-//  legendstracker
+//  StoreRequest.swift
+//  Legendstracker
 //
 //  Created by Marcus Ziadé on 29.9.2022.
 //
@@ -9,16 +9,16 @@ import Foundation
 
 extension ApexService {
     
-    /// Get the Apex server status
-    func serverStatus() async throws -> ServerStatus {
-        components.path = "/servers"
+    /// Get latest store items.
+    func store() async throws -> [StoreProducts] {
+        components.path = "/store"
         components.queryItems = [
             URLQueryItem(name: "auth", value: Keys.apiKey.rawValue)
         ]
-
+        
         do {
-            let status: ServerStatus = try await request(with: components.url)
-            return status
+            let store: [StoreProducts] = try await request(with: components.url)
+            return store
         } catch {
             throw error
         }

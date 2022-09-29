@@ -1,6 +1,6 @@
 //
-//  legendstrackerApp.swift
-//  legendstracker
+//  LegendstrackerApp.swift
+//  Legendstracker
 //
 //  Created by Marcus Ziadé on 28.9.2022.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct legendstrackerApp: App {
+struct LegendstrackerApp: App {
     
     @StateObject var newsViewModel = NewsVM(service: ApexService())
     

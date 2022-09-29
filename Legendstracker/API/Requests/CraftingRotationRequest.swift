@@ -1,6 +1,6 @@
 //
 //  CraftingRotationRequest.swift
-//  legendstracker
+//  Legendstracker
 //
 //  Created by Marcus Ziadé on 29.9.2022.
 //

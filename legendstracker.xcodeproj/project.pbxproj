@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A0686FD28E4C7BB0098E287 /* legendstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */; };
+		5A0686FD28E4C7BB0098E287 /* LegendstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0686FC28E4C7BB0098E287 /* LegendstrackerApp.swift */; };
 		5A06871B28E4CCE20098E287 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871A28E4CCE20098E287 /* News.swift */; };
 		5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */; };
 		5A06872128E4D1CE0098E287 /* StoreProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06872028E4D1CE0098E287 /* StoreProductsResponse.swift */; };
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		5A0686F928E4C7BB0098E287 /* legendstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legendstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendstrackerApp.swift; sourceTree = "<group>"; };
+		5A0686FC28E4C7BB0098E287 /* LegendstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendstrackerApp.swift; sourceTree = "<group>"; };
 		5A06871A28E4CCE20098E287 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		5A06871C28E4CE0C0098E287 /* ApexPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPlayer.swift; sourceTree = "<group>"; };
 		5A06872028E4D1CE0098E287 /* StoreProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProductsResponse.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		5A0686F028E4C7BB0098E287 = {
 			isa = PBXGroup;
 			children = (
-				5A0686FB28E4C7BB0098E287 /* legendstracker */,
+				5A0686FB28E4C7BB0098E287 /* Legendstracker */,
 				5A0686FA28E4C7BB0098E287 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,17 +90,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A0686FB28E4C7BB0098E287 /* legendstracker */ = {
+		5A0686FB28E4C7BB0098E287 /* Legendstracker */ = {
 			isa = PBXGroup;
 			children = (
-				5A0686FC28E4C7BB0098E287 /* legendstrackerApp.swift */,
+				5A0686FC28E4C7BB0098E287 /* LegendstrackerApp.swift */,
 				5A06871628E4CC630098E287 /* API */,
 				5A06874B28E5284B0098E287 /* Views */,
 				5A06874828E523C40098E287 /* Screens */,
 				5A06874528E4F8B60098E287 /* ViewModels */,
 				5A06873428E4E5740098E287 /* Resources */,
 			);
-			path = legendstracker;
+			path = Legendstracker;
 			sourceTree = "<group>";
 		};
 		5A06871628E4CC630098E287 /* API */ = {
@@ -264,7 +264,7 @@
 				5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */,
 				5A06871B28E4CCE20098E287 /* News.swift in Sources */,
 				5A06875528E5346A0098E287 /* SafariView.swift in Sources */,
-				5A0686FD28E4C7BB0098E287 /* legendstrackerApp.swift in Sources */,
+				5A0686FD28E4C7BB0098E287 /* LegendstrackerApp.swift in Sources */,
 				5A06873628E4E59E0098E287 /* Keys.swift in Sources */,
 				5A06872528E4D5690098E287 /* PlayerUIDResponse.swift in Sources */,
 				5A06872928E4D5FC0098E287 /* ApexPredatorResponse.swift in Sources */,

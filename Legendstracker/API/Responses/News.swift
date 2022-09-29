@@ -1,6 +1,6 @@
 //
 //  News.swift
-//  legendstracker
+//  Legendstracker
 //
 //  Created by Marcus Ziadé on 28.9.2022.
 //
