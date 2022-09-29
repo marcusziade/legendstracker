@@ -23,4 +23,9 @@ extension ApexService {
             throw error
         }
     }
+    
+    var serverStatusMock: ServerStatus {
+        let s: ServerStatus = try! getMockData(forFileName: "ServerStatusMock", filetype: "json")
+        return s
+    }
 }

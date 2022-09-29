@@ -11,6 +11,7 @@ import SwiftUI
 struct LegendstrackerApp: App {
     
     @StateObject var newsViewModel = NewsVM(service: ApexService())
+    @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
     
     var body: some Scene {
         WindowGroup {
@@ -18,6 +19,10 @@ struct LegendstrackerApp: App {
                 NewsView(model: newsViewModel)
                     .tabItem {
                         Label("News", systemImage: "newspaper")
+                    }
+                ServerStatusView(model: serverStatusViewModel)
+                    .tabItem {
+                        Label("Status", systemImage: "network")
                     }
             }
         }

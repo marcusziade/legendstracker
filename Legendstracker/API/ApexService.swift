@@ -52,11 +52,30 @@ final class ApexService {
         }
     }
     
+    func getMockData<T: Codable>(forFileName fileName: String, filetype: String) throws -> T {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: filetype) else {
+            throw MockError.path
+        }
+        
+        let url = URL(fileURLWithPath: path)
+        let data: Data
+        do {
+            data = try Data(contentsOf: url)
+        } catch {
+            throw MockError.data
+        }
+        
+        do {
+            return try jsonDecoder.decode(T.self, from: data)
+        } catch {
+            throw MockError.decode
+        }
+    }
+    
     // MARK: Private
     
     private let jsonDecoder: JSONDecoder = {
         let d = JSONDecoder()
-        d.keyDecodingStrategy = .convertFromSnakeCase
         return d
     }()
 }

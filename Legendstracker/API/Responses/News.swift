@@ -4,7 +4,6 @@
 //
 //  Created by Marcus Ziadé on 28.9.2022.
 //
-
 import Foundation
 
 struct News: Codable, Identifiable {
@@ -14,6 +13,13 @@ struct News: Codable, Identifiable {
     let link: URL
     let img: URL
     let shortDesc: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title = "title"
+        case link = "link"
+        case img = "img"
+        case shortDesc = "short_desc"
+    }
     
     static var mocks: [News] {
         (0...10).map { index -> News in
