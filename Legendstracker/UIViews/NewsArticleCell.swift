@@ -58,6 +58,7 @@ final class NewsArticleCell: UITableViewCell {
     private let articleImageView = UIImageView()
         .configure {
             $0.contentMode = .scaleAspectFill
+            $0.clipsToBounds = true
         }
 
     private let titleLabel = UILabel()
