@@ -30,7 +30,7 @@ final class NewsArticleCell: UITableViewCell {
                 $0.translatesAutoresizingMaskIntoConstraints = false
                 $0.axis = .vertical
                 $0.alignment = .leading
-                $0.spacing = 4
+                $0.spacing = UIStackView.spacingUseSystem
                 $0.layoutMargins = .init(top: 12, left: .zero, bottom: 12, right: .zero)
                 $0.isLayoutMarginsRelativeArrangement = true
             }
@@ -43,7 +43,7 @@ final class NewsArticleCell: UITableViewCell {
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
 
-            articleImageView.heightAnchor.constraint(equalToConstant: 250),
+            articleImageView.heightAnchor.constraint(equalToConstant: 200),
         ])
     }
 
