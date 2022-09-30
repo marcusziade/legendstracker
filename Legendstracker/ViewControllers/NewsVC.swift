@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SafariServices
 import UIKit
 
 final class NewsVC: ViewController {
@@ -74,6 +75,7 @@ final class NewsVC: ViewController {
         view.separatorStyle = .none
         view.refreshControl = refreshControl
         view.dataSource = self
+        view.delegate = self
         view.registerCell(UITableViewCell.self)
         view.registerCell(NewsArticleCell.self)
         return view
@@ -83,6 +85,12 @@ final class NewsVC: ViewController {
         let view = UIActivityIndicatorView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
+    }()
+
+    private lazy var safariConfig: SFSafariViewController.Configuration = {
+        let config = SFSafariViewController.Configuration()
+        config.entersReaderIfAvailable = true
+        return config
     }()
 
     private func refreshControlToggled() {
@@ -126,6 +134,18 @@ extension NewsVC: UITableViewDataSource {
         case .result(news: let articles):
             articleCell.configure(with: articles[indexPath.row])
             return articleCell
+        }
+    }
+}
+
+extension NewsVC: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch model.state {
+        case .loading: break
+        case .error(message: _): break
+        case .result(news: let articles):
+            present(SFSafariViewController(url: articles[indexPath.row].link, configuration: safariConfig), animated: true)
         }
     }
 }
