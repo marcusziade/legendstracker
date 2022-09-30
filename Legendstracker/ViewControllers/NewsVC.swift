@@ -63,10 +63,16 @@ final class NewsVC: ViewController {
 
     private let model: NewsVM
 
+    private lazy var refreshControl = UIRefreshControl(
+        frame: .zero,
+        primaryAction: UIAction { [unowned self] _ in refreshControlToggled() }
+    )
+
     private lazy var tableView: UITableView = {
         let view = UITableView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.separatorStyle = .none
+        view.refreshControl = refreshControl
         view.dataSource = self
         view.registerCell(UITableViewCell.self)
         view.registerCell(NewsArticleCell.self)
@@ -78,6 +84,13 @@ final class NewsVC: ViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+
+    private func refreshControlToggled() {
+        loadingView.startAnimating()
+        Task { await model.refresh() }
+        refreshControl.endRefreshing()
+        loadingView.stopAnimating()
+    }
 }
 
 extension NewsVC: UITableViewDataSource {
