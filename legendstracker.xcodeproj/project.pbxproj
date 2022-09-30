@@ -39,8 +39,6 @@
 		5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */; };
 		5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */; };
 		5A06874728E4F8C90098E287 /* NewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874628E4F8C90098E287 /* NewsVM.swift */; };
-		5A06874A28E523D40098E287 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874928E523D40098E287 /* NewsView.swift */; };
-		5A06875328E52E870098E287 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06875228E52E870098E287 /* ArticleRow.swift */; };
 		5A06875528E5346A0098E287 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06875428E5346A0098E287 /* SafariView.swift */; };
 		5A06875828E537B00098E287 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5A06875728E537B00098E287 /* Kingfisher */; };
 		5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */; };
@@ -99,8 +97,6 @@
 		5A06874128E4F44F0098E287 /* ApexPredatorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorRequest.swift; sourceTree = "<group>"; };
 		5A06874328E4F4D40098E287 /* CraftingRotationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRotationRequest.swift; sourceTree = "<group>"; };
 		5A06874628E4F8C90098E287 /* NewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVM.swift; sourceTree = "<group>"; };
-		5A06874928E523D40098E287 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
-		5A06875228E52E870098E287 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
 		5A06875428E5346A0098E287 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusVM.swift; sourceTree = "<group>"; };
 		5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
@@ -273,7 +269,6 @@
 		5A06874828E523C40098E287 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				5A06874928E523D40098E287 /* NewsView.swift */,
 				5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */,
 				5AC82D9A28E58F9000A21051 /* MapRotationView.swift */,
 				5A80860228E60B1C00691068 /* StoreView.swift */,
@@ -285,7 +280,6 @@
 		5A06874B28E5284B0098E287 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5A06875228E52E870098E287 /* ArticleRow.swift */,
 				5A06875428E5346A0098E287 /* SafariView.swift */,
 				5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */,
 				5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */,
@@ -393,7 +387,6 @@
 				5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */,
 				5A06872D28E4DF080098E287 /* ApexService.swift in Sources */,
 				5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */,
-				5A06874A28E523D40098E287 /* NewsView.swift in Sources */,
 				5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */,
 				5AC82D9128E563D300A21051 /* EAAccountsScrollView.swift in Sources */,
 				5A06871B28E4CCE20098E287 /* NewsArticle.swift in Sources */,
@@ -427,7 +420,6 @@
 				5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */,
 				5AC82D9928E56FE800A21051 /* MapRotationVM.swift in Sources */,
 				5A6FAFAC28E546ED00616E00 /* ServerStatusView.swift in Sources */,
-				5A06875328E52E870098E287 /* ArticleRow.swift in Sources */,
 				5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */,
 				5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */,
 				5A06872128E4D1CE0098E287 /* StoreProduct.swift in Sources */,
