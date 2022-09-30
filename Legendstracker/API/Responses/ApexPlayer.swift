@@ -11,13 +11,129 @@
 import Foundation
 
 struct ApexPlayer: Codable {
-    let global: Global
-    let realtime: Realtime
-    let legends: Legends
-    let mozambiquehereInternal: MozambiquehereInternal
-    let als: Als
-    let total: Total
-    
+
+    // Global
+
+    /// The player's username in Apex.
+    var name: String { global?.name ?? "–" }
+    /// The player's avatar URL.
+    var avatarURL: URL? { URL(string: global?.avatar ?? "") }
+    /// The platform the player is on.
+    var platform: String { global?.platform ?? "–" }
+    /// The player account level.
+    var level: Int { global?.level ?? 0 }
+    /// The total percentage earned of next rank up.
+    var toNextLevelPrecent: Int { global?.toNextLevelPercent ?? 0 }
+    /// The player's Unique ID.
+    var UID: String {
+        if let uid = global?.uid {
+            return String(uid)
+        } else {
+            return "–"
+        }
+    }
+    /// The player's ban information.
+    var bans: Bans {
+        Bans(
+            isActive: global?.bans.isActive ?? false,
+            remainingSeconds: global?.bans.remainingSeconds ?? 0,
+            lastBanReason: global?.bans.lastBanReason ?? "–"
+        )
+    }
+    /// The player's battle royale rank information.
+    var brRank: Rank {
+        Rank(
+            rankScore: global?.rank.rankScore ?? 0,
+            rankName: global?.rank.rankName ?? "–",
+            rankDiv: global?.rank.rankDiv ?? 0,
+            ladderPosPlatform: global?.rank.ladderPosPlatform ?? 0,
+            rankImg: global?.rank.rankImg ?? "",
+            rankedSeason: global?.rank.rankedSeason ?? "–"
+        )
+    }
+    /// The player's arenas rank information.
+    var arenaRank: Rank {
+        Rank(
+            rankScore: global?.arena.rankScore ?? 0,
+            rankName: global?.arena.rankName ?? "–",
+            rankDiv: global?.arena.rankDiv ?? 0,
+            ladderPosPlatform: global?.arena.ladderPosPlatform ?? 0,
+            rankImg: global?.arena.rankImg ?? "",
+            rankedSeason: global?.arena.rankedSeason ?? "–"
+        )
+    }
+    /// The player's battle pass information.
+    var battlePass: Battlepass {
+        Battlepass(
+            level: global?.battlepass.level ?? "–",
+            history: global?.battlepass.history ?? [:]
+        )
+    }
+
+    // Realtime
+
+    /// The player's lobby state
+    var lobbyState: String { realtime?.lobbyState ?? "–" }
+    /// Is the player online?
+    var isOnline: Bool { realtime?.isOnline ?? 0 == 1 }
+    /// Is the player in game?
+    var isInGame: Bool { realtime?.isInGame ?? 0 == 1 }
+    /// Can the player be joined?
+    var isJoinable: Bool { realtime?.canJoin ?? 0 == 1 }
+    /// Is the player's party full?
+    var isPartyFull: Bool { realtime?.partyFull ?? 0 == 1 }
+    /// The currently active selected legend for the player. The last legend they played or configured.
+    var selectedLegendName: String { realtime?.selectedLegend ?? "–" }
+    /// The player's current state.
+    var currentState: String { realtime?.currentState ?? "–" }
+    /// The player's current state timestamp. When the information updated.
+    var currentStateSinceTimestamp: Int { realtime?.currentStateSinceTimestamp ?? 0 }
+    /// The player's current state in simple text.
+    var currentStateText: String { realtime?.currentStateAsText ?? "–" }
+
+    // Legends
+
+    /// The currently active selected legend.
+    var selectedLegend: SelectedLegend? { legends?.selected }
+    /// All Apex legends and their image assets.
+    var allLegends: AllLegends {
+        AllLegends(
+            revenant: legends?.all.revenant,
+            crypto: legends?.all.crypto,
+            horizon: legends?.all.horizon,
+            gibraltar: legends?.all.gibraltar,
+            wattson: legends?.all.wattson,
+            fuse: legends?.all.fuse,
+            bangalore: legends?.all.bangalore,
+            wraith: legends?.all.wraith,
+            octane: legends?.all.octane,
+            bloodhound: legends?.all.bloodhound,
+            caustic: legends?.all.caustic,
+            lifeline: legends?.all.lifeline,
+            pathfinder: legends?.all.pathfinder,
+            loba: legends?.all.loba,
+            mirage: legends?.all.mirage,
+            rampart: legends?.all.rampart,
+            valkyrie: legends?.all.valkyrie,
+            seer: legends?.all.seer,
+            ash: legends?.all.ash,
+            madMaggie: legends?.all.madMaggie,
+            newcastle: legends?.all.newcastle,
+            vantage: legends?.all.vantage
+        )
+    }
+
+    // Total
+
+    /// The player's cumulative damage in the game.
+    var totalDamage: ApexItem { total?.damage ?? ApexItem(name: "–", value: 0) }
+    /// The cumulative amount of enemy players the player has scanned.
+    var totalEnemiesScanned: ApexItem { total?.enemiesScanned ?? ApexItem(name: "–", value: 0) }
+    /// The cumulative amount of special event kills for the player.
+    var totalSpecialEventKills: ApexItem { total?.specialEventKills ?? ApexItem(name: "–", value: 0) }
+    /// The player's kill death ratio.
+    var kdRatio: Kd { total?.kd ?? Kd(value: "–", name: "–") }
+
     enum CodingKeys: String, CodingKey {
         case global = "global"
         case realtime = "realtime"
@@ -26,6 +142,13 @@ struct ApexPlayer: Codable {
         case als = "ALS"
         case total = "total"
     }
+
+    private let global: Global?
+    private let realtime: Realtime?
+    private let legends: Legends?
+    private let mozambiquehereInternal: MozambiquehereInternal?
+    private let als: Als?
+    private let total: Total?
 }
 
 struct Als: Codable {
@@ -37,7 +160,7 @@ struct Als: Codable {
 }
 
 struct Global: Codable {
-    let name: String
+    let name: String?
     let uid: Int
     let avatar: String
     let platform: String
@@ -45,12 +168,12 @@ struct Global: Codable {
     let toNextLevelPercent: Int
     let internalUpdateCount: Int
     let bans: Bans
-    let rank: Arena
-    let arena: Arena
+    let rank: Rank
+    let arena: Rank
     let battlepass: Battlepass
     let internalParsingVersion: Int
-    let badges: [Damage]
-    let levelPrestige: Int
+    let badges: [ApexItem]?
+    let levelPrestige: Int?
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
@@ -70,7 +193,7 @@ struct Global: Codable {
     }
 }
 
-struct Arena: Codable {
+struct Rank: Codable {
     let rankScore: Int
     let rankName: String
     let rankDiv: Int
@@ -88,8 +211,8 @@ struct Arena: Codable {
     }
 }
 
-struct Damage: Codable {
-    let name: String
+struct ApexItem: Codable {
+    let name: String?
     let value: Int
     
     enum CodingKeys: String, CodingKey {
@@ -131,28 +254,28 @@ struct Legends: Codable {
 }
 
 struct AllLegends: Codable {
-    let revenant: Legend
-    let crypto: Legend
-    let horizon: Legend
-    let gibraltar: Legend
-    let wattson: Legend
-    let fuse: Legend
-    let bangalore: Legend
-    let wraith: Legend
-    let octane: Legend
-    let bloodhound: Bloodhound
-    let caustic: Legend
-    let lifeline: Legend
-    let pathfinder: Legend
-    let loba: Legend
-    let mirage: Legend
-    let rampart: Legend
-    let valkyrie: Legend
-    let seer: Legend
-    let ash: Legend
-    let madMaggie: Legend
-    let newcastle: Legend
-    let vantage: Legend
+    let revenant: Legend?
+    let crypto: Legend?
+    let horizon: Legend?
+    let gibraltar: Legend?
+    let wattson: Legend?
+    let fuse: Legend?
+    let bangalore: Legend?
+    let wraith: Legend?
+    let octane: Legend?
+    let bloodhound: Bloodhound?
+    let caustic: Legend?
+    let lifeline: Legend?
+    let pathfinder: Legend?
+    let loba: Legend?
+    let mirage: Legend?
+    let rampart: Legend?
+    let valkyrie: Legend?
+    let seer: Legend?
+    let ash: Legend?
+    let madMaggie: Legend?
+    let newcastle: Legend?
+    let vantage: Legend?
     
     enum CodingKeys: String, CodingKey {
         case revenant = "Revenant"
@@ -199,8 +322,8 @@ struct ImgAssets: Codable {
 }
 
 struct Bloodhound: Codable {
-    let data: [BloodhoundDatum]
-    let gameInfo: BloodhoundGameInfo
+    let data: [BloodhoundDatum]?
+    let gameInfo: BloodhoundGameInfo?
     let imgAssets: ImgAssets
     
     enum CodingKeys: String, CodingKey {
@@ -211,33 +334,19 @@ struct Bloodhound: Codable {
 }
 
 struct BloodhoundDatum: Codable {
-    let name: String
+    let name: String?
     let value: Int
     let key: String
-    let rank: Rank
-    let rankPlatformSpecific: Rank
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case value = "value"
         case key = "key"
-        case rank = "rank"
-        case rankPlatformSpecific = "rankPlatformSpecific"
-    }
-}
-
-struct Rank: Codable {
-    let rankPos: Int
-    let topPercent: Double
-    
-    enum CodingKeys: String, CodingKey {
-        case rankPos = "rankPos"
-        case topPercent = "topPercent"
     }
 }
 
 struct BloodhoundGameInfo: Codable {
-    let badges: [Damage]
+    let badges: [ApexItem]?
     
     enum CodingKeys: String, CodingKey {
         case badges = "badges"
@@ -246,7 +355,7 @@ struct BloodhoundGameInfo: Codable {
 
 struct SelectedLegend: Codable {
     let legendName: String
-    let data: [SelectedDatum]
+    let data: [SelectedDatum]?
     let gameInfo: SelectedGameInfo
     let imgAssets: ImgAssets
     
@@ -259,7 +368,7 @@ struct SelectedLegend: Codable {
 }
 
 struct SelectedDatum: Codable {
-    let name: String
+    let name: String?
     let value: Int
     let key: String
     let global: Bool
@@ -281,7 +390,7 @@ struct SelectedGameInfo: Codable {
     let poseRarity: String
     let intro: String
     let introRarity: String
-    let badges: [Badge]
+    let badges: [Badge]?
     
     enum CodingKeys: String, CodingKey {
         case skin = "skin"
@@ -297,7 +406,7 @@ struct SelectedGameInfo: Codable {
 }
 
 struct Badge: Codable {
-    let name: String
+    let name: String?
     let value: Int
     let category: String
     
@@ -361,10 +470,10 @@ struct Realtime: Codable {
 }
 
 struct Total: Codable {
-    let damage: Damage
-    let enemiesScanned: Damage
-    let specialEventKills: Damage
-    let kd: Kd
+    let damage: ApexItem?
+    let enemiesScanned: ApexItem?
+    let specialEventKills: ApexItem?
+    let kd: Kd?
     
     enum CodingKeys: String, CodingKey {
         case damage = "damage"
@@ -376,7 +485,7 @@ struct Total: Codable {
 
 struct Kd: Codable {
     let value: String
-    let name: String
+    let name: String?
     
     enum CodingKeys: String, CodingKey {
         case value = "value"

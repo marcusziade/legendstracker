@@ -19,6 +19,10 @@ struct LegendstrackerApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                SearchPlayerView(model: searchPlayerViewModel)
+                    .tabItem {
+                        Label("Search", systemImage: "doc.text.magnifyingglass")
+                    }
                 NewsVCView(model: newsViewModel)
                     .tabItem {
                         Label("News", systemImage: "newspaper.fill")

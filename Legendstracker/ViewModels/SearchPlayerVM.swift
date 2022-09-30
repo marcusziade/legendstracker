@@ -14,29 +14,34 @@ final class SearchPlayerVM: ObservableObject {
         case loading
         case error(message: String)
         case result(player: ApexPlayer)
+        case empty
     }
     
-    @Published var state: State = .loading
+    @Published var state: State = .empty
     @Published var searchQuery: String = ""
     
     init(service: ApexService) {
         self.service = service
-        
-        Task { await player() }
 
         $searchQuery
             .dropFirst()
-            .debounce(for: 0.4, scheduler: RunLoop.main)
-            .sink { [unowned self] query in
-                if !query.isEmpty {
+            .debounce(for: 0.5, scheduler: DispatchQueue.main)
+            .removeDuplicates()
+            .map { query -> Bool in
+                return query.isEmpty
+            }
+            .sink { [unowned self] isQueryEmpty in
+                if isQueryEmpty {
+                    state = .empty
+                } else {
                     Task { await refresh() }
                 }
             }
             .store(in: &cancellables)
     }
-    
+
     func refresh() async { await player() }
-    
+
     // MARK: Private
     
     private var cancellables = Set<AnyCancellable>()
@@ -46,10 +51,13 @@ final class SearchPlayerVM: ObservableObject {
     @MainActor private func player() async {
         state = .loading
         do {
-            state = .result(player: try await service.player(forName: searchQuery))
+            debugPrint(try await service.player(forQuery: searchQuery))
+            state = .result(player: try await service.player(forQuery: searchQuery))
         } catch let error as HTTPError {
+            debugPrint(error.caption)
             state = .error(message: error.caption)
         } catch {
+            debugPrint(error)
             state = .error(message: error.localizedDescription)
         }
     }

@@ -8,12 +8,25 @@
 import Foundation
 
 extension ApexService {
+
+    /// Makes a query for a player name or player UID
+    /// - Parameter query: The input query from the user
+    /// - Returns: An `ApexPlayer` object
+    func player(forQuery query: String) async throws -> ApexPlayer {
+        let decimalCharacters = CharacterSet.decimalDigits
+
+        if query.rangeOfCharacter(from: decimalCharacters) == nil {
+            return try await player(forName: query)
+        }
+
+        return try await player(forID: query)
+    }
     
     /// To obtain a `Player` for name.
-    func player(forName name: String) async throws -> ApexPlayer {
+    private func player(forName name: String) async throws -> ApexPlayer {
         components.path = "/bridge"
         components.queryItems?.append(contentsOf: [
-            URLQueryItem(name: "player", value: "Guitaripod"),
+            URLQueryItem(name: "player", value: name),
             URLQueryItem(name: "platform", value: "PC"),
         ])
 
@@ -26,11 +39,11 @@ extension ApexService {
     }
     
     /// To obtain a `Player` for id.
-    func player(forID id: String) async throws -> ApexPlayer {
+    private func player(forID id: String) async throws -> ApexPlayer {
         components.path = "/bridge"
         components.queryItems = [
             URLQueryItem(name: "auth", value: Keys.apiKey.rawValue),
-            URLQueryItem(name: "uid", value: "2297593921"),
+            URLQueryItem(name: "uid", value: id),
             URLQueryItem(name: "platform", value: "PC"),
         ]
 
