@@ -12,7 +12,7 @@ import Foundation
 
 struct ApexPlayer: Codable {
 
-    // Global
+    // MARK: Global
 
     /// The player's username in Apex.
     var name: String { global?.name ?? "–" }
@@ -24,6 +24,14 @@ struct ApexPlayer: Codable {
     var level: Int { global?.level ?? 0 }
     /// The total percentage earned of next rank up.
     var toNextLevelPrecent: Int { global?.toNextLevelPercent ?? 0 }
+    /// The title of the BR season.
+    var rankedBrSeasonTitle: String {
+        brRank.rankedSeason.replacingOccurrences(of: "_", with: " ").capitalized
+    }
+    /// The title of the Arena season.
+    var rankedArenaSeasonTitle: String {
+        arenaRank.rankedSeason.replacingOccurrences(of: "_", with: " ").capitalized
+    }
     /// The player's Unique ID.
     var UID: String {
         if let uid = global?.uid {
@@ -39,6 +47,16 @@ struct ApexPlayer: Codable {
             remainingSeconds: global?.bans.remainingSeconds ?? 0,
             lastBanReason: global?.bans.lastBanReason ?? "–"
         )
+    }
+    /// The remaining time for the player's ban.
+    var unBanDateText: String {
+        let f = DateComponentsFormatter()
+        f.allowedUnits = [.day, .hour, .minute, .second]
+        f.unitsStyle = .short
+
+        let start = Date.now
+        let end = Date(timeIntervalSince1970: TimeInterval(bans.remainingSeconds))
+        return f.string(from: start, to: end) ?? "–"
     }
     /// The player's battle royale rank information.
     var brRank: Rank {
@@ -70,7 +88,7 @@ struct ApexPlayer: Codable {
         )
     }
 
-    // Realtime
+    // MARK: Realtime
 
     /// The player's lobby state
     var lobbyState: String { realtime?.lobbyState ?? "–" }
@@ -88,6 +106,20 @@ struct ApexPlayer: Codable {
     var currentState: String { realtime?.currentState ?? "–" }
     /// The player's current state timestamp. When the information updated.
     var currentStateSinceTimestamp: Int { realtime?.currentStateSinceTimestamp ?? 0 }
+    /// When the timestamp was created in nicely formatted text.
+    var currentStateSinceTimestampText: String {
+        guard let timestamp = realtime?.currentStateSinceTimestamp else {
+            return "–"
+        }
+
+        let f = DateComponentsFormatter()
+        f.allowedUnits = [.year, .month, .day, .hour, .minute, .second]
+        f.unitsStyle = .brief
+
+        let now = Date.now
+        let timestampDate = Date(timeIntervalSince1970: TimeInterval(timestamp))
+        return f.string(from: timestampDate, to: now) ?? "–"
+    }
     /// The player's current state in simple text.
     var currentStateText: String { realtime?.currentStateAsText ?? "–" }
 
@@ -123,7 +155,7 @@ struct ApexPlayer: Codable {
         )
     }
 
-    // Total
+    // MARK: Total
 
     /// The player's cumulative damage in the game.
     var totalDamage: ApexItem { total?.damage ?? ApexItem(name: "–", value: 0) }

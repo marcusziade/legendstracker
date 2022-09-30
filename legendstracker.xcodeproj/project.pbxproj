@@ -61,6 +61,9 @@
 		5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */; };
 		5AC82DA228E5A96000A21051 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA128E5A96000A21051 /* View+Ext.swift */; };
 		5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */; };
+		5AF3E7E928E7545E0048C987 /* PlayerGlobalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */; };
+		5AF3E7EB28E78C880048C987 /* OwnedLegendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */; };
+		5AF3E7ED28E795420048C987 /* RankSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7EC28E795420048C987 /* RankSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,9 @@
 		5AC82D9C28E590DC00A21051 /* MapRotationResponse_Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapRotationResponse_Mock.json; sourceTree = "<group>"; };
 		5AC82DA128E5A96000A21051 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoView.swift; sourceTree = "<group>"; };
+		5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGlobalInfoView.swift; sourceTree = "<group>"; };
+		5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnedLegendsView.swift; sourceTree = "<group>"; };
+		5AF3E7EC28E795420048C987 /* RankSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +297,9 @@
 				5AC82D9628E5664B00A21051 /* OtherPlatformsScrollView.swift */,
 				5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */,
 				5A012ECF28E60DCF001AB519 /* StoreRow.swift */,
+				5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */,
+				5AF3E7EC28E795420048C987 /* RankSectionView.swift */,
+				5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +395,7 @@
 				5AC82D8F28E5634B00A21051 /* EANovaFusionScrollView.swift in Sources */,
 				5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */,
 				5A06872D28E4DF080098E287 /* ApexService.swift in Sources */,
+				5AF3E7EB28E78C880048C987 /* OwnedLegendsView.swift in Sources */,
 				5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */,
 				5A06872F28E4DFAA0098E287 /* HTTPError.swift in Sources */,
 				5AC82D9128E563D300A21051 /* EAAccountsScrollView.swift in Sources */,
@@ -426,9 +436,11 @@
 				5A80860328E60B1C00691068 /* StoreView.swift in Sources */,
 				5AC82D9328E5641A00A21051 /* ApexCrossPlayScrollView.swift in Sources */,
 				5A06873E28E4F3420098E287 /* UIDForPlayerNameRequest.swift in Sources */,
+				5AF3E7E928E7545E0048C987 /* PlayerGlobalInfoView.swift in Sources */,
 				5A06872328E4D4FD0098E287 /* ServerStatus.swift in Sources */,
 				5A012EDD28E63D7F001AB519 /* NewsVC.swift in Sources */,
 				5A012EE728E6A732001AB519 /* NewsArticleCell.swift in Sources */,
+				5AF3E7ED28E795420048C987 /* RankSectionView.swift in Sources */,
 				5AC82D9B28E58F9000A21051 /* MapRotationView.swift in Sources */,
 				5A012EDB28E63D1B001AB519 /* ViewController.swift in Sources */,
 			);

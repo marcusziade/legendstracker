@@ -14,23 +14,26 @@ struct SearchPlayerView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
+            VStack {
                 switch model.state {
                 case .loading:
-                    ProgressView()
+                    ZStack {
+                        PlayerGlobalInfoView(player: ApexService().playerMock)
+                            .redacted(reason: .placeholder)
+                        ProgressView()
+                    }
 
                 case .error(message: let errorMessage):
                     Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
 
                 case .result(player: let p):
-                    Text(p.selectedLegendName)
-                    KFImage(URL(string: p.brRank.rankImg))
+                    PlayerGlobalInfoView(player: p)
 
                 case .empty:
-                    Text("No search query...")
+                    Text("No search query").fontWeight(.black)
+                    PlayerGlobalInfoView(player: ApexService().playerMock)
+                        .redacted(reason: .placeholder)
                 }
-
-                Spacer()
             }
         }
         .searchable(text: $model.searchQuery)
