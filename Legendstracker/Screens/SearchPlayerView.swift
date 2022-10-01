@@ -20,11 +20,18 @@ struct SearchPlayerView: View {
                     ZStack {
                         PlayerGlobalInfoView(player: ApexService().playerMock)
                             .redacted(reason: .placeholder)
-                        ProgressView()
+                        VStack { ProgressView(); Spacer() }
                     }
 
                 case .error(message: let errorMessage):
-                    Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                    ZStack {
+                        PlayerGlobalInfoView(player: ApexService().playerMock)
+                            .redacted(reason: .placeholder)
+                        Color.black.opacity(0.5)
+                        Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                            .shadow(radius: 5).shadow(radius: 5)
+                            .shadow(radius: 5).shadow(radius: 5)
+                    }
 
                 case .result(player: let p):
                     PlayerGlobalInfoView(player: p)
