@@ -1,6 +1,7 @@
 import Foundation
 
-struct ApexPlayer: Codable {
+struct ApexPlayer: Codable, Identifiable {
+    var id: String { UID }
 
     // MARK: Global
 

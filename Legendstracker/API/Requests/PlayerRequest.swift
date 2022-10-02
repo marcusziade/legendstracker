@@ -53,4 +53,12 @@ extension ApexService {
         let p: ApexPlayer = try! getMockData(forFileName: "ApexPlayerMock", filetype: "json")
         return p
     }
+
+    var playerMocks: [ApexPlayer] {
+        [
+            try! getMockData(forFileName: "ApexPlayerMock", filetype: "json"),
+            try! getMockData(forFileName: "ApexPlayerMock2", filetype: "json"),
+            try! getMockData(forFileName: "ApexPlayerMock3", filetype: "json")
+        ]
+    }
 }

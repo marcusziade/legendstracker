@@ -9,16 +9,15 @@ final class MapRotationVM: ObservableObject {
     }
 
     @Published var state: State = .loading
-    @Published var editorText: String = "Type your text here..."
-
-    init(
-        service: ApexService
-    ) {
+    
+    init(service: ApexService) {
         self.service = service
-
-        Task { await mapRotation() }
+        
+        Task { await reload() }
     }
 
+    func reload() async { await mapRotation() }
+    
     // MARK: Private
 
     private let service: ApexService

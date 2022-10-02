@@ -7,19 +7,16 @@ final class SearchPlayerVM: ObservableObject {
         case loading
         case error(message: String)
         case result(player: ApexPlayer)
-        case empty
+        case idle
     }
-
-    @Published var state: State = .empty
-    @Published var searchQuery: String = ""
-
-    init(
-        service: ApexService
-    ) {
+    
+    @Published var state: State = .loading
+    @Published var searchQuery: String = "Guitaripod"
+    
+    init(service: ApexService) {
         self.service = service
 
         $searchQuery
-            .dropFirst()
             .debounce(for: 0.5, scheduler: DispatchQueue.main)
             .removeDuplicates()
             .map { query -> Bool in
@@ -27,15 +24,15 @@ final class SearchPlayerVM: ObservableObject {
             }
             .sink { [unowned self] isQueryEmpty in
                 if isQueryEmpty {
-                    state = .empty
+                    state = .idle
                 } else {
-                    Task { await refresh() }
+                    Task { await reload() }
                 }
             }
             .store(in: &cancellables)
     }
 
-    func refresh() async { await player() }
+    func reload() async { await player() }
 
     // MARK: Private
 

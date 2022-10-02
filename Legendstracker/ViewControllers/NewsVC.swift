@@ -31,6 +31,7 @@ final class NewsVC: ViewController {
         ])
 
         model.$state
+            .receive(on: DispatchQueue.main)
             .sink { [unowned self] state in
                 switch state {
 
@@ -45,9 +46,7 @@ final class NewsVC: ViewController {
 
                 case .result(news: _):
                     loadingView.stopAnimating()
-                    DispatchQueue.main.async { [self] in
-                        tableView.reloadData()
-                    }
+                    tableView.reloadData()
                 }
             }
             .store(in: &cancellables)
@@ -90,7 +89,7 @@ final class NewsVC: ViewController {
 
     private func refreshControlToggled() {
         loadingView.startAnimating()
-        Task { await model.refresh() }
+        Task { await model.reload() }
         refreshControl.endRefreshing()
         loadingView.stopAnimating()
     }

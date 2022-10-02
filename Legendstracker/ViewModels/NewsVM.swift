@@ -15,12 +15,12 @@ final class NewsVM: ObservableObject {
         service: ApexService
     ) {
         self.service = service
-
-        Task { await news() }
+        
+        Task { await reload() }
     }
-
-    func refresh() async { await news() }
-
+    
+    func reload() async { await news() }
+    
     // MARK: Private
 
     private let service: ApexService

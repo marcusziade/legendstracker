@@ -11,9 +11,14 @@ struct ServerStatusView: View {
             ProgressView()
 
         case .error(message: let errorMessage):
-            Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
-
-        case .result(let status):
+            VStack {
+                Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                Button { Task { await model.reload() } } label: {
+                    Text("Retry")
+                }
+            }
+            
+        case .result(status: let status):
             ServerStatusRegionsView(status: status)
         }
     }

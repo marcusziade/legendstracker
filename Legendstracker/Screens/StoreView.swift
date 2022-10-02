@@ -6,10 +6,18 @@ struct StoreView: View {
 
     var body: some View {
         switch model.state {
+
         case .loading:
             ProgressView().progressViewStyle(.linear)
+
         case .error(message: let errorMessage):
-            Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+            VStack {
+                Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                Button { Task { await model.reload() } } label: {
+                    Text("Retry")
+                }
+            }
+
         case .result(store: let storeProducts):
             NavigationView {
                 List(storeProducts) { p in
@@ -20,7 +28,7 @@ struct StoreView: View {
                 }
                 .navigationTitle("Store")
                 .listStyle(.plain)
-                .refreshable { await model.refresh() }
+                .refreshable { await model.reload() }
             }
         }
     }

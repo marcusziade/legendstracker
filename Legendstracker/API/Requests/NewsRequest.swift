@@ -3,12 +3,16 @@ import Foundation
 extension ApexService {
 
     func news() async throws -> [NewsArticle] {
+#if targetEnvironment(simulator)
+        return newsMock
+#else
         do {
             let news: [NewsArticle] = try await request(with: newsURL)
             return news
         } catch {
             throw error
         }
+#endif
     }
 
     /// To obtain a list of news articles
