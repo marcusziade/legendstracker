@@ -11,6 +11,7 @@ import SwiftUI
 struct PlayerGlobalInfoView: View {
 
     let player: ApexPlayer
+    let friendsStore: FriendsStore
 
     var body: some View {
         Form {
@@ -103,6 +104,13 @@ struct PlayerGlobalInfoView: View {
             }
             .listRowSeparator(.hidden)
 
+            // MARK: Friends
+
+            Section("Friends") {
+                FriendsListView(model: FriendsVM(service: ApexService(), friendsStore: friendsStore))
+//                Text("test")
+            }
+
             if player.bans.isActive {
                 Section("Bans") {
                     Text("Status: \(player.bans.isActive ? "Banned" : "Not banned")")
@@ -117,6 +125,6 @@ struct PlayerGlobalInfoView: View {
 
 struct PlayerGlobalInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerGlobalInfoView(player: ApexService().playerMock)
+        PlayerGlobalInfoView(player: ApexService().playerMock, friendsStore: FriendsStore.mock)
     }
 }

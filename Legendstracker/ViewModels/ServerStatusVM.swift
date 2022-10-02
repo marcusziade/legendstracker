@@ -20,13 +20,13 @@ final class ServerStatusVM: ObservableObject {
     init(service: ApexService) {
         self.service = service
         
-        Task { await serverStatus() }
+        Task { await reload() }
     }
     
-    func refresh() async { await serverStatus() }
+    func reload() async { await serverStatus() }
     
     // MARK: Private
-    
+
     private let service: ApexService
     
     @MainActor private func serverStatus() async {

@@ -17,9 +17,14 @@ struct MapRotationView: View {
             
         case .loading:
             ProgressView()
-            
+
         case .error(message: let errorMessage):
-            Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+            VStack {
+                Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                Button { Task { await model.reload() } } label: {
+                    Text("Retry")
+                }
+            }
             
         case .result(rotation: let r):
             ZStack {

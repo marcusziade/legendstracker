@@ -48,6 +48,12 @@
 		5A8085FF28E609F200691068 /* StoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8085FE28E609F200691068 /* StoreVM.swift */; };
 		5A80860128E60AC900691068 /* StoreMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A80860028E60AC900691068 /* StoreMock.json */; };
 		5A80860328E60B1C00691068 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80860228E60B1C00691068 /* StoreView.swift */; };
+		5AAC8C7E28E836D2005B39AA /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC8C7D28E836D2005B39AA /* FriendsListView.swift */; };
+		5AAC8C8028E83776005B39AA /* FriendsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC8C7F28E83776005B39AA /* FriendsVM.swift */; };
+		5AAC8C8628E83D31005B39AA /* ApexPlayerMock2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC8C8528E83D31005B39AA /* ApexPlayerMock2.json */; };
+		5AAC8C8828E83D9F005B39AA /* ApexPlayerMock3.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC8C8728E83D9F005B39AA /* ApexPlayerMock3.json */; };
+		5AAC8C8A28E9E81C005B39AA /* FriendsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC8C8928E9E81C005B39AA /* FriendsStore.swift */; };
+		5AAC8C8C28E9EBB3005B39AA /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC8C8B28E9EBB3005B39AA /* FriendRow.swift */; };
 		5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */; };
 		5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */; };
 		5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */; };
@@ -108,6 +114,12 @@
 		5A8085FE28E609F200691068 /* StoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVM.swift; sourceTree = "<group>"; };
 		5A80860028E60AC900691068 /* StoreMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StoreMock.json; sourceTree = "<group>"; };
 		5A80860228E60B1C00691068 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		5AAC8C7D28E836D2005B39AA /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
+		5AAC8C7F28E83776005B39AA /* FriendsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsVM.swift; sourceTree = "<group>"; };
+		5AAC8C8528E83D31005B39AA /* ApexPlayerMock2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApexPlayerMock2.json; sourceTree = "<group>"; };
+		5AAC8C8728E83D9F005B39AA /* ApexPlayerMock3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApexPlayerMock3.json; sourceTree = "<group>"; };
+		5AAC8C8928E9E81C005B39AA /* FriendsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsStore.swift; sourceTree = "<group>"; };
+		5AAC8C8B28E9EBB3005B39AA /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
 		5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionsView.swift; sourceTree = "<group>"; };
 		5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionView.swift; sourceTree = "<group>"; };
 		5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginLoginScrollView.swift; sourceTree = "<group>"; };
@@ -201,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				5A06872C28E4DF080098E287 /* ApexService.swift */,
+				5AAC8C8928E9E81C005B39AA /* FriendsStore.swift */,
 				5A06873028E4DFAE0098E287 /* Models */,
 				5A06871728E4CC6D0098E287 /* Responses */,
 				5A06873128E4E4BB0098E287 /* Requests */,
@@ -256,6 +269,8 @@
 				5A80860028E60AC900691068 /* StoreMock.json */,
 				5A012ED128E61941001AB519 /* newsMock.json */,
 				5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */,
+				5AAC8C8528E83D31005B39AA /* ApexPlayerMock2.json */,
+				5AAC8C8728E83D9F005B39AA /* ApexPlayerMock3.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -268,6 +283,7 @@
 				5AC82D9828E56FE800A21051 /* MapRotationVM.swift */,
 				5A8085FE28E609F200691068 /* StoreVM.swift */,
 				5A012ED528E61C47001AB519 /* SearchPlayerVM.swift */,
+				5AAC8C7F28E83776005B39AA /* FriendsVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -300,6 +316,8 @@
 				5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */,
 				5AF3E7EC28E795420048C987 /* RankSectionView.swift */,
 				5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */,
+				5AAC8C7D28E836D2005B39AA /* FriendsListView.swift */,
+				5AAC8C8B28E9EBB3005B39AA /* FriendRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,8 +398,10 @@
 				5A6FAFAE28E5484900616E00 /* ServerStatusMock.json in Resources */,
 				5A80860128E60AC900691068 /* StoreMock.json in Resources */,
 				5A012ED228E61941001AB519 /* newsMock.json in Resources */,
+				5AAC8C8828E83D9F005B39AA /* ApexPlayerMock3.json in Resources */,
 				5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */,
 				5A012ED428E61BF5001AB519 /* ApexPlayerMock.json in Resources */,
+				5AAC8C8628E83D31005B39AA /* ApexPlayerMock2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,9 +435,11 @@
 				5A06874028E4F3D00098E287 /* MapRotationRequest.swift in Sources */,
 				5A06873C28E4F19D0098E287 /* ServerStatusRequest.swift in Sources */,
 				5A06873828E4EEA30098E287 /* PlayerRequest.swift in Sources */,
+				5AAC8C8A28E9E81C005B39AA /* FriendsStore.swift in Sources */,
 				5AC82D9528E5646200A21051 /* CoreStatusScrollView.swift in Sources */,
 				5A06874728E4F8C90098E287 /* NewsVM.swift in Sources */,
 				5A06874428E4F4D40098E287 /* CraftingRotationRequest.swift in Sources */,
+				5AAC8C8028E83776005B39AA /* FriendsVM.swift in Sources */,
 				5A012EE128E647B5001AB519 /* NavigationController.swift in Sources */,
 				5AC82D9728E5664B00A21051 /* OtherPlatformsScrollView.swift in Sources */,
 				5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */,
@@ -430,7 +452,9 @@
 				5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */,
 				5AC82D9928E56FE800A21051 /* MapRotationVM.swift in Sources */,
 				5A6FAFAC28E546ED00616E00 /* ServerStatusView.swift in Sources */,
+				5AAC8C7E28E836D2005B39AA /* FriendsListView.swift in Sources */,
 				5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */,
+				5AAC8C8C28E9EBB3005B39AA /* FriendRow.swift in Sources */,
 				5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */,
 				5A06872128E4D1CE0098E287 /* StoreProduct.swift in Sources */,
 				5A80860328E60B1C00691068 /* StoreView.swift in Sources */,

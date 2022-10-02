@@ -11,6 +11,9 @@ extension ApexService {
     
     /// Get the map rotation information.
     func mapRotation() async throws -> MapRotationResponse {
+#if targetEnvironment(simulator)
+        return mapRotation_Mock
+#else
         components.path = "/maprotation"
         
         do {
@@ -19,6 +22,7 @@ extension ApexService {
         } catch {
             throw error
         }
+#endif
     }
     
     var mapRotation_Mock: MapRotationResponse {
