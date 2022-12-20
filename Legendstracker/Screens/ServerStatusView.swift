@@ -22,7 +22,6 @@ struct ServerStatusView: View {
             
         case .result(status: let status):
             ServerStatusRegionsView(status: status)
-                .refreshable { await model.refresh() }
         }
     }
 }
