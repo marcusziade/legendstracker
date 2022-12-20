@@ -31,12 +31,28 @@ final class StoreVM: ObservableObject {
     
     @MainActor private func storeProducts() async {
         state = .loading
-        do {
-            state = .result(store: try await service.store())
-        } catch let error as HTTPError {
-            state = .error(message: error.caption)
-        } catch {
-            state = .error(message: error.localizedDescription)
+        
+        var retries = 0
+        while retries < 5 {
+            do {
+                state = .result(store: try await service.store())
+                break
+            } catch let error as HTTPError {
+                switch error {
+                case .rateLimit:
+                    // Delay next try with a second. The ratelimit is 2 requests / second.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        retries += 1
+                        debugPrint("ratelimit shit")
+                    }
+                default:
+                    state = .error(message: error.caption)
+                    break
+                }
+            } catch {
+                state = .error(message: error.localizedDescription)
+                break
+            }
         }
     }
     

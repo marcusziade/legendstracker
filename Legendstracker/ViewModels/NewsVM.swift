@@ -32,14 +32,28 @@ final class NewsVM: ObservableObject {
     
     @MainActor private func news() async {
         state = .loading
-        do {
-            state = try await .result(news: service.news())
-        } catch let error as HTTPError {
-            state = .error(message: error.caption)
-            debugPrint(error.caption)
-        } catch {
-            debugPrint(error)
-            state = .error(message: error.localizedDescription)
+        
+        var retries = 0
+        while retries < 5 {
+            do {
+                state = try await .result(news: service.news())
+                break
+            } catch let error as HTTPError {
+                switch error {
+                case .rateLimit:
+                    // Delay next try with a second. The ratelimit is 2 requests / second.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        retries += 1
+                        debugPrint("ratelimit shit")
+                    }
+                default:
+                    state = .error(message: error.caption)
+                    break
+                }
+            } catch {
+                state = .error(message: error.localizedDescription)
+                break
+            }
         }
     }
     

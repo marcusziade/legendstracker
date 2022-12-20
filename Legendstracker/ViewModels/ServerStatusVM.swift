@@ -31,13 +31,28 @@ final class ServerStatusVM: ObservableObject {
     
     @MainActor private func serverStatus() async {
         state = .loading
-        do {
-            state = .result(status: try await service.serverStatus())
-        } catch let error as HTTPError {
-            state = .error(message: error.caption)
-        } catch {
-            debugPrint(error)
-            state = .error(message: error.localizedDescription)
+        
+        var retries = 0
+        while retries < 5 {
+            do {
+                state = .result(status: try await service.serverStatus())
+                break
+            } catch let error as HTTPError {
+                switch error {
+                case .rateLimit:
+                    // Delay next try with a second. The ratelimit is 2 requests / second.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        retries += 1
+                        debugPrint("ratelimit shit")
+                    }
+                default:
+                    state = .error(message: error.caption)
+                    break
+                }
+            } catch {
+                state = .error(message: error.localizedDescription)
+                break
+            }
         }
     }
     

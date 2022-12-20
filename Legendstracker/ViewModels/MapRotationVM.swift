@@ -30,14 +30,28 @@ final class MapRotationVM: ObservableObject {
     
     @MainActor private func mapRotation() async {
         state = .loading
-        do {
-            debugPrint(try await service.mapRotation())
-            state = .result(rotation:  try await service.mapRotation())
-        } catch let error as HTTPError {
-            state = .error(message: error.caption)
-        } catch {
-            debugPrint(error)
-            state = .error(message: error.localizedDescription)
+        
+        var retries = 0
+        while retries < 5 {
+            do {
+                state = .result(rotation:  try await service.mapRotation())
+                break
+            } catch let error as HTTPError {
+                switch error {
+                case .rateLimit:
+                    // Delay next try with a second. The ratelimit is 2 requests / second.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        retries += 1
+                        debugPrint("ratelimit shit")
+                    }
+                default:
+                    state = .error(message: error.caption)
+                    break
+                }
+            } catch {
+                state = .error(message: error.localizedDescription)
+                break
+            }
         }
     }
     

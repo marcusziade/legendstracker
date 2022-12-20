@@ -50,15 +50,28 @@ final class SearchPlayerVM: ObservableObject {
     
     @MainActor private func player() async {
         state = .loading
-        do {
-            debugPrint(try await service.player(forQuery: searchQuery))
-            state = .result(player: try await service.player(forQuery: searchQuery))
-        } catch let error as HTTPError {
-            debugPrint(error.caption)
-            state = .error(message: error.caption)
-        } catch {
-            debugPrint(error)
-            state = .error(message: error.localizedDescription)
+        
+        var retries = 0
+        while retries < 5 {
+            do {
+                state = .result(player: try await service.player(forQuery: searchQuery))
+                break
+            } catch let error as HTTPError {
+                switch error {
+                case .rateLimit:
+                    // Delay next try with a second. The ratelimit is 2 requests / second.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        retries += 1
+                        debugPrint("ratelimit shit")
+                    }
+                default:
+                    state = .error(message: error.caption)
+                    break
+                }
+            } catch {
+                state = .error(message: error.localizedDescription)
+                break
+            }
         }
     }
     
