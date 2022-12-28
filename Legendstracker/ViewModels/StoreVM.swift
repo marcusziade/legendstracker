@@ -20,10 +20,10 @@ final class StoreVM: ObservableObject {
     init(service: ApexService) {
         self.service = service
         
-        Task { await storeProducts() }
+        Task { await reload() }
     }
     
-    func refresh() async { await storeProducts() }
+    func reload() async { await storeProducts() }
     
     // MARK: Private
     

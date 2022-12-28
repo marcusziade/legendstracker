@@ -1,0 +1,1223 @@
+{
+    "global": {
+        "name": "Holiwhirl",
+        "uid": 1000542933771,
+        "avatar": "",
+        "platform": "PC",
+        "level": 155,
+        "toNextLevelPercent": 64,
+        "internalUpdateCount": 45751,
+        "bans": {
+            "isActive": false,
+            "remainingSeconds": 0,
+            "last_banReason": "COMPETITIVE_DODGE_COOLDOWN"
+        },
+        "rank": {
+            "rankScore": 11717,
+            "rankName": "Diamond",
+            "rankDiv": 4,
+            "ladderPosPlatform": -1,
+            "rankImg": "https:\/\/api.mozambiquehe.re\/assets\/ranks\/diamond4.png",
+            "rankedSeason": "season14_split_2"
+        },
+        "arena": {
+            "rankScore": 0,
+            "rankName": "Unranked",
+            "rankDiv": 0,
+            "ladderPosPlatform": -1,
+            "rankImg": "https:\/\/api.mozambiquehe.re\/assets\/ranks\/unranked4.png",
+            "rankedSeason": "arenas14_split_2"
+        },
+        "battlepass": {
+            "level": "-1",
+            "history": {
+                "season1": -1,
+                "season2": -1,
+                "season3": -1,
+                "season4": -1,
+                "season5": -1,
+                "season6": -1,
+                "season7": -1,
+                "season8": -1,
+                "season9": -1,
+                "season10": -1,
+                "season11": -1,
+                "season12": -1,
+                "season13": -1,
+                "season14": 0
+            }
+        },
+        "internalParsingVersion": 2,
+        "badges": [
+            {
+                "name": "You're Tiering Me Apart: Ranked Season 8",
+                "value": 11
+            },
+            {
+                "name": "You're Tiering Me Apart: Ranked Season 7",
+                "value": 11
+            },
+            {
+                "name": "You're Tiering Me Apart: Ranked Season 12",
+                "value": 13
+            },
+            {
+                "name": "You're Tiering Me Apart: Ranked Season 11",
+                "value": 13
+            },
+            {
+                "name": "You're Tiering Me Apart: Ranked Season 10",
+                "value": 13
+            },
+            {
+                "name": "Team. Work.",
+                "value": 5
+            },
+            {
+                "name": "Suicide Awareness",
+                "value": 0
+            },
+            {
+                "name": "Pride",
+                "value": 0
+            }
+        ],
+        "levelPrestige": 1
+    },
+    "realtime": {
+        "lobbyState": "open",
+        "isOnline": 0,
+        "isInGame": 0,
+        "canJoin": 0,
+        "partyFull": 0,
+        "selectedLegend": "Horizon",
+        "currentState": "offline",
+        "currentStateSinceTimestamp": -1,
+        "currentStateAsText": "Offline"
+    },
+    "legends": {
+        "selected": {
+            "LegendName": "Horizon",
+            "data": [
+                {
+                    "name": "BR Kills",
+                    "value": 30412,
+                    "key": "kills",
+                    "global": false
+                },
+                {
+                    "name": "BR Kills as kill leader",
+                    "value": 6008,
+                    "key": "kills_as_kill_leader",
+                    "global": false
+                },
+                {
+                    "name": "BR Damage",
+                    "value": 9185147,
+                    "key": "damage",
+                    "global": false
+                }
+            ],
+            "gameInfo": {
+                "skin": "Dark Matter",
+                "skinRarity": "Legendary",
+                "frame": "Astrodial Mischief",
+                "frameRarity": "Legendary",
+                "pose": "One Small Step",
+                "poseRarity": "Epic",
+                "intro": "Dinnae fash yersel 'cause I'm the best",
+                "introRarity": "Rare",
+                "badges": [
+                    {
+                        "name": "You're Tiering Me Apart: Ranked Season 10",
+                        "value": 13,
+                        "category": "Account Badges"
+                    },
+                    {
+                        "name": "Horizon's Wrath",
+                        "value": 5,
+                        "category": "Horizon"
+                    },
+                    {
+                        "name": "Horizon's Wake",
+                        "value": 0,
+                        "category": "Horizon"
+                    }
+                ]
+            },
+            "ImgAssets": {
+                "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/horizon.png",
+                "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/horizon.jpg"
+            }
+        },
+        "all": {
+            "Global": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/global.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/global.jpg"
+                }
+            },
+            "Revenant": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 370,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 213601,
+                            "topPercent": 12.23
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 117816,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 168098,
+                            "topPercent": 28.55
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 9 wins",
+                        "value": 13,
+                        "key": "wins_season_9",
+                        "rank": {
+                            "rankPos": 6315,
+                            "topPercent": 7.67
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Revenant's Wrath",
+                            "value": 3
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/revenant.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/revenant.jpg"
+                }
+            },
+            "Crypto": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/crypto.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/crypto.jpg"
+                }
+            },
+            "Horizon": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 30412,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 200,
+                            "topPercent": 0.01
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 46,
+                            "topPercent": 0.01
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 9185147,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 124,
+                            "topPercent": 0.01
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 52,
+                            "topPercent": 0.03
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 6008,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 95,
+                            "topPercent": 0.67
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 12,
+                            "topPercent": 0.36
+                        }
+                    },
+                    {
+                        "name": "BR Season 8 wins",
+                        "value": 216,
+                        "key": "wins_season_8",
+                        "rank": {
+                            "rankPos": 376,
+                            "topPercent": 0.42
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 122,
+                            "topPercent": 1.01
+                        }
+                    },
+                    {
+                        "name": "BR Season 9 kills",
+                        "value": 4623,
+                        "key": "kills_season_9",
+                        "rank": {
+                            "rankPos": 142,
+                            "topPercent": 0.25
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 38,
+                            "topPercent": 0.61
+                        }
+                    },
+                    {
+                        "name": "BR Season 10 kills",
+                        "value": 3221,
+                        "key": "kills_season_10",
+                        "rank": {
+                            "rankPos": 331,
+                            "topPercent": 0.72
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 100,
+                            "topPercent": 1.98
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Horizon's Wrath",
+                            "value": 5
+                        },
+                        {
+                            "name": "Horizon's Wake",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/horizon.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/horizon.jpg"
+                }
+            },
+            "Gibraltar": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/gibraltar.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/gibraltar.jpg"
+                }
+            },
+            "Wattson": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/wattson.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/wattson.jpg"
+                }
+            },
+            "Fuse": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 125,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 500351,
+                            "topPercent": 31.36
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/fuse.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/fuse.jpg"
+                }
+            },
+            "Bangalore": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 309,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 684917,
+                            "topPercent": 20.32
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 98396,
+                            "topPercent": 18.07
+                        }
+                    },
+                    {
+                        "name": "BR Season 6 Wins",
+                        "value": 1,
+                        "key": "wins_season_6",
+                        "rank": {
+                            "rankPos": 45735,
+                            "topPercent": 57.5
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 6462,
+                            "topPercent": 70.98
+                        }
+                    },
+                    {
+                        "name": "BR Season 6 Kills",
+                        "value": 30,
+                        "key": "kills_season_6",
+                        "rank": {
+                            "rankPos": 23646,
+                            "topPercent": 54.44
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 3594,
+                            "topPercent": 71.07
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Flawless Victory I",
+                            "value": 0
+                        },
+                        {
+                            "name": "Flawless Victory II",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/bangalore.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/bangalore.jpg"
+                }
+            },
+            "Wraith": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 4827,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 137601,
+                            "topPercent": 3.15
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 34267,
+                            "topPercent": 3.78
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 1558408,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 57428,
+                            "topPercent": 10.18
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 28830,
+                            "topPercent": 8.08
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 652,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 6939,
+                            "topPercent": 11.26
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 2191,
+                            "topPercent": 21.55
+                        }
+                    },
+                    {
+                        "name": "BR Kills",
+                        "value": 2961,
+                        "key": "specialEvent_kills",
+                        "rank": {
+                            "rankPos": 174823,
+                            "topPercent": 12.68
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 959481,
+                        "key": "specialEvent_damage",
+                        "rank": {
+                            "rankPos": 179315,
+                            "topPercent": 14.47
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Wins",
+                        "value": 128,
+                        "key": "specialEvent_wins",
+                        "rank": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 9 kills",
+                        "value": 1109,
+                        "key": "kills_season_9",
+                        "rank": {
+                            "rankPos": 12817,
+                            "topPercent": 8.18
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Wraith's Wrath",
+                            "value": 5
+                        },
+                        {
+                            "name": "Wraith's Wake",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/wraith.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/wraith.jpg"
+                }
+            },
+            "Octane": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 2639,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 146583,
+                            "topPercent": 3.43
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 802249,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 136560,
+                            "topPercent": 9.26
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Games played",
+                        "value": 1148,
+                        "key": "games_played",
+                        "rank": {
+                            "rankPos": 16708,
+                            "topPercent": 13.45
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 9 kills",
+                        "value": 1016,
+                        "key": "kills_season_9",
+                        "rank": {
+                            "rankPos": 12255,
+                            "topPercent": 5
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Octane's Wrath",
+                            "value": 4
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/octane.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/octane.jpg"
+                }
+            },
+            "Bloodhound": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 975,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 347210,
+                            "topPercent": 6.84
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 319636,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 304330,
+                            "topPercent": 17.85
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 66,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 4733,
+                            "topPercent": 9.01
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Bloodhound's Wrath",
+                            "value": 3
+                        },
+                        {
+                            "name": "Flawless Victory II",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/bloodhound.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/bloodhound.jpg"
+                }
+            },
+            "Caustic": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 286,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 444983,
+                            "topPercent": 24.42
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 103681,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 307771,
+                            "topPercent": 38.17
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 10 kills",
+                        "value": 47,
+                        "key": "kills_season_10",
+                        "rank": {
+                            "rankPos": 18433,
+                            "topPercent": 36.59
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Caustic's Wrath",
+                            "value": 0
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/caustic.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/caustic.jpg"
+                }
+            },
+            "Lifeline": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 463,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 571801,
+                            "topPercent": 13.39
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 159698,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 414843,
+                            "topPercent": 32.41
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Games played",
+                        "value": 325,
+                        "key": "games_played",
+                        "rank": {
+                            "rankPos": 24081,
+                            "topPercent": 28.52
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Lifeline's Wrath",
+                            "value": 4
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/lifeline.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/lifeline.jpg"
+                }
+            },
+            "Pathfinder": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 958,
+                        "key": "specialEvent_kills",
+                        "rank": {
+                            "rankPos": 296852,
+                            "topPercent": 22.62
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 304806,
+                        "key": "specialEvent_damage",
+                        "rank": {
+                            "rankPos": 296015,
+                            "topPercent": 24.95
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Wins",
+                        "value": 41,
+                        "key": "specialEvent_wins",
+                        "rank": {
+                            "rankPos": 229488,
+                            "topPercent": 24.23
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Pathfinder's Wrath",
+                            "value": 3
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/pathfinder.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/pathfinder.jpg"
+                }
+            },
+            "Loba": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 396,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 288843,
+                            "topPercent": 13.47
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 124160,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 253533,
+                            "topPercent": 30.52
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Games played",
+                        "value": 197,
+                        "key": "games_played",
+                        "rank": {
+                            "rankPos": 15282,
+                            "topPercent": 37.67
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 6 Wins",
+                        "value": 0,
+                        "key": "wins_season_6",
+                        "rank": {
+                            "rankPos": 33825,
+                            "topPercent": 97.6
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Season 6 Kills",
+                        "value": 19,
+                        "key": "kills_season_6",
+                        "rank": {
+                            "rankPos": 21489,
+                            "topPercent": 47.26
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Kills",
+                        "value": 348,
+                        "key": "specialEvent_kills",
+                        "rank": {
+                            "rankPos": 215000,
+                            "topPercent": 27.66
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 108618,
+                        "key": "specialEvent_damage",
+                        "rank": {
+                            "rankPos": 231406,
+                            "topPercent": 36.36
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Wins",
+                        "value": 16,
+                        "key": "specialEvent_wins",
+                        "rank": {
+                            "rankPos": 202982,
+                            "topPercent": 37.16
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Loba's Wrath",
+                            "value": 4
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/loba.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/loba.jpg"
+                }
+            },
+            "Mirage": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/mirage.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/mirage.jpg"
+                }
+            },
+            "Rampart": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/rampart.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/rampart.jpg"
+                }
+            },
+            "Valkyrie": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 657,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 219126,
+                            "topPercent": 7.2
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 243795,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 187570,
+                            "topPercent": 14.45
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Valkyrie's Wrath",
+                            "value": 5
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/valkyrie.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/valkyrie.jpg"
+                }
+            },
+            "Seer": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 429,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 68691,
+                            "topPercent": 3.85
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 15884,
+                            "topPercent": 6.01
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 152214,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 55193,
+                            "topPercent": 7.97
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 13317,
+                            "topPercent": 12.57
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 43,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 675,
+                            "topPercent": 14.25
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 166,
+                            "topPercent": 7.44
+                        }
+                    }
+                ],
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/seer.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/seer.jpg"
+                }
+            },
+            "Ash": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 1085,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 22019,
+                            "topPercent": 1.2
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 366695,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 18396,
+                            "topPercent": 4.44
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 106,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 789,
+                            "topPercent": 12.05
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 225,
+                            "topPercent": 9.48
+                        }
+                    }
+                ],
+                "gameInfo": {
+                    "badges": [
+                        {
+                            "name": "Ash's Wrath",
+                            "value": 4
+                        }
+                    ]
+                },
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/ash.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/ash.jpg"
+                }
+            },
+            "Mad Maggie": {
+                "data": [
+                    {
+                        "name": "BR Kills",
+                        "value": 178,
+                        "key": "kills",
+                        "rank": {
+                            "rankPos": 90273,
+                            "topPercent": 7.13
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Damage",
+                        "value": 52944,
+                        "key": "damage",
+                        "rank": {
+                            "rankPos": 60561,
+                            "topPercent": 25.66
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": "NOT_CALCULATED_YET",
+                            "topPercent": "NOT_CALCULATED_YET"
+                        }
+                    },
+                    {
+                        "name": "BR Kills as kill leader",
+                        "value": 30,
+                        "key": "kills_as_kill_leader",
+                        "rank": {
+                            "rankPos": 401,
+                            "topPercent": 17.42
+                        },
+                        "rankPlatformSpecific": {
+                            "rankPos": 137,
+                            "topPercent": 11.05
+                        }
+                    }
+                ],
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/mad maggie.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/mad maggie.jpg"
+                }
+            },
+            "Newcastle": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/newcastle.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/newcastle.jpg"
+                }
+            },
+            "Vantage": {
+                "ImgAssets": {
+                    "icon": "https:\/\/api.mozambiquehe.re\/assets\/icons\/vantage.png",
+                    "banner": "https:\/\/api.mozambiquehe.re\/assets\/banners\/vantage.jpg"
+                }
+            }
+        }
+    },
+    "mozambiquehere_internal": {
+        "isNewToDB": false,
+        "claimedBy": "1664601452",
+        "APIAccessType": "BASIC",
+        "ClusterID": "5",
+        "rate_limit": {
+            "max_per_second": 2,
+            "current_req": null
+        },
+        "clusterSrv": "MAIN-CLUSTER"
+    },
+    "ALS": {
+        "isALSDataEnabled": false
+    },
+    "total": {
+        "kills": {
+            "name": "BR Kills",
+            "value": 43151
+        },
+        "damage": {
+            "name": "BR Damage",
+            "value": 13186443
+        },
+        "wins_season_9": {
+            "name": "BR Season 9 wins",
+            "value": 13
+        },
+        "kills_as_kill_leader": {
+            "name": "BR Kills as kill leader",
+            "value": 6905
+        },
+        "wins_season_8": {
+            "name": "BR Season 8 wins",
+            "value": 216
+        },
+        "kills_season_9": {
+            "name": "BR Season 9 kills",
+            "value": 6748
+        },
+        "kills_season_10": {
+            "name": "BR Season 10 kills",
+            "value": 3268
+        },
+        "wins_season_6": {
+            "name": "BR Season 6 Wins",
+            "value": 1
+        },
+        "kills_season_6": {
+            "name": "BR Season 6 Kills",
+            "value": 49
+        },
+        "specialEvent_kills": {
+            "name": "BR Kills",
+            "value": 4267
+        },
+        "specialEvent_damage": {
+            "name": "BR Damage",
+            "value": 1372905
+        },
+        "specialEvent_wins": {
+            "name": "BR Wins",
+            "value": 185
+        },
+        "games_played": {
+            "name": "BR Games played",
+            "value": 1670
+        },
+        "kd": {
+            "value": "25.84",
+            "name": "KD"
+        }
+    }
+}

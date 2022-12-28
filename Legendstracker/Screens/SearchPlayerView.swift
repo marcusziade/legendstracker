@@ -18,32 +18,39 @@ struct SearchPlayerView: View {
                 switch model.state {
                 case .loading:
                     ZStack {
-                        PlayerGlobalInfoView(player: ApexService().playerMock)
+                        PlayerGlobalInfoView(player: ApexService().playerMock, friendsStore: FriendsStore.mock)
                             .redacted(reason: .placeholder)
                         VStack { ProgressView(); Spacer() }
                     }
 
                 case .error(message: let errorMessage):
                     ZStack {
-                        PlayerGlobalInfoView(player: ApexService().playerMock)
+                        PlayerGlobalInfoView(player: ApexService().playerMock, friendsStore: FriendsStore.mock)
                             .redacted(reason: .placeholder)
                         Color.black.opacity(0.5)
-                        Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
-                            .shadow(radius: 5).shadow(radius: 5)
-                            .shadow(radius: 5).shadow(radius: 5)
+                        VStack {
+                            Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
+                                .shadow(radius: 5).shadow(radius: 5)
+                                .shadow(radius: 5).shadow(radius: 5)
+                            Button { Task { await model.reload() } } label: {
+                                Text("Retry")
+                            }
+                        }
                     }
 
                 case .result(player: let p):
-                    PlayerGlobalInfoView(player: p)
+                    PlayerGlobalInfoView(player: p, friendsStore: FriendsStore())
 
-                case .empty:
+                case .idle:
                     Text("No search query").fontWeight(.black)
-                    PlayerGlobalInfoView(player: ApexService().playerMock)
-                        .redacted(reason: .placeholder)
                 }
+            }
+            .toolbar {
+                Button("Reload") { Task { await model.reload() } }
             }
         }
         .searchable(text: $model.searchQuery)
+
     }
 }
 

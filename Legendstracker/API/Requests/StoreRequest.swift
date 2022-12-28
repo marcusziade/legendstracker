@@ -11,6 +11,9 @@ extension ApexService {
     
     /// Get latest store items.
     func store() async throws -> [StoreProduct] {
+#if targetEnvironment(simulator)
+        return storeMock
+#else
         components.path = "/store"
         
         do {
@@ -19,6 +22,7 @@ extension ApexService {
         } catch {
             throw error
         }
+#endif
     }
     
     var storeMock: [StoreProduct] {
