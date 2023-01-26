@@ -1,10 +1,3 @@
-//
-//  OtherPlatformsScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct OtherPlatformsScrollView: View {
@@ -43,3 +36,4 @@ struct OtherPlatformsScrollView_Previews: PreviewProvider {
         OtherPlatformsScrollView(status: ApexService().serverStatusMock)
     }
 }
+

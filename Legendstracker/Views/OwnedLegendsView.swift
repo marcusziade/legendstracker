@@ -1,10 +1,3 @@
-//
-//  OwnedLegendsView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 30.9.2022.
-//
-
 import Kingfisher
 import SwiftUI
 
@@ -167,3 +160,4 @@ struct OwnedLegendsView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  EAAccountsScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct EAAccountsScrollView: View {
@@ -78,3 +71,4 @@ struct EAAccountsScrollView_Previews: PreviewProvider {
         EAAccountsScrollView(status: ApexService().serverStatusMock)
     }
 }
+

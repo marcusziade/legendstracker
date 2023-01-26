@@ -1,10 +1,3 @@
-//
-//  MapRotationVM.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 
 final class MapRotationVM: ObservableObject {
@@ -61,3 +54,4 @@ final class MapRotationVM: ObservableObject {
         return vm
     }
 }
+

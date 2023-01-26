@@ -1,10 +1,3 @@
-//
-//  NewsVC.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Combine
 import Foundation
 import SafariServices
@@ -149,3 +142,4 @@ extension NewsVC: UITableViewDelegate {
         }
     }
 }
+

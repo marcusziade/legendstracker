@@ -1,14 +1,3 @@
-//
-//  MapRotationResponse.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let mapRotationResponse = try? newJSONDecoder().decode(MapRotationResponse.self, from: jsonData)
-
 import Foundation
 
 struct MapRotationResponse: Codable {
@@ -110,3 +99,4 @@ struct Next: Codable {
         case durationInMinutes = "DurationInMinutes"
     }
 }
+

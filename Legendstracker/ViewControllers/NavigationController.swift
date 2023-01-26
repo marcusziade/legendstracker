@@ -1,10 +1,3 @@
-//
-//  NavigationController.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 30.9.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -22,3 +15,4 @@ final class NavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
     }
 }
+

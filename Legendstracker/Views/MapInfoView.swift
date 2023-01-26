@@ -1,10 +1,3 @@
-//
-//  MapInfoView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct MapInfoView: View {
@@ -39,3 +32,4 @@ struct MapInfoView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+

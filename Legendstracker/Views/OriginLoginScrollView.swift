@@ -1,10 +1,3 @@
-//
-//  OriginLoginScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct OriginLoginScrollView: View {
@@ -79,3 +72,4 @@ struct OriginLoginScrollView_Previews: PreviewProvider {
         OriginLoginScrollView(status: ApexService().serverStatusMock)
     }
 }
+

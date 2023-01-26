@@ -1,10 +1,3 @@
-//
-//  MockError.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 
 enum MockError: Error {
@@ -21,3 +14,4 @@ enum MockError: Error {
         }
     }
 }
+

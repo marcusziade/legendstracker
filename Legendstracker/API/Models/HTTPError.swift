@@ -1,10 +1,3 @@
-//
-//  HTTPError.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-
 import Foundation
 
 enum HTTPError: Error {
@@ -55,3 +48,4 @@ enum HTTPError: Error {
         }
     }
 }
+

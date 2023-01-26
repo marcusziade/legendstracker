@@ -1,10 +1,3 @@
-//
-//  PlayerGlobalInfoView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 30.9.2022.
-//
-
 import Kingfisher
 import SwiftUI
 
@@ -120,3 +113,4 @@ struct PlayerGlobalInfoView_Previews: PreviewProvider {
         PlayerGlobalInfoView(player: ApexService().playerMock)
     }
 }
+

@@ -1,13 +1,3 @@
-//
-//  ApexPlayer.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let apexPlayer = try? newJSONDecoder().decode(ApexPlayer.self, from: jsonData)
-
 import Foundation
 
 struct ApexPlayer: Codable {
@@ -524,3 +514,4 @@ struct Kd: Codable {
         case name = "name"
     }
 }
+

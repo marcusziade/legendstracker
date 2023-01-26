@@ -1,10 +1,3 @@
-//
-//  Configurable.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 30.9.2022.
-//
-
 import Foundation
 
 protocol Configurable {
@@ -25,3 +18,4 @@ extension Configurable {
 extension NSObject: Configurable {}
 extension JSONDecoder: Configurable {}
 extension JSONEncoder: Configurable {}
+

@@ -1,10 +1,3 @@
-//
-//  NewsArticleCell.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 30.9.2022.
-//
-
 import Combine
 import Foundation
 import Kingfisher
@@ -77,3 +70,4 @@ final class NewsArticleCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

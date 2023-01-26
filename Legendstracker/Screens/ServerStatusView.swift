@@ -1,10 +1,3 @@
-//
-//  ServerStatusView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct ServerStatusView: View {
@@ -31,3 +24,4 @@ struct ServerStatusView_Previews: PreviewProvider {
         ServerStatusView(model: ServerStatusVM.mock)
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  RankSectionView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 1.10.2022.
-//
-
 import Kingfisher
 import SwiftUI
 
@@ -38,3 +31,4 @@ struct RankSectionView_Previews: PreviewProvider {
         RankSectionView(score: p.brRank.rankScore, rankName: p.brRank.rankName, rankDivision: p.brRank.rankDiv, seasonTitle: p.rankedBrSeasonTitle, thumbnail: URL(string: p.brRank.rankImg)!)
     }
 }
+

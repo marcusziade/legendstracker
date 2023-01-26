@@ -1,10 +1,3 @@
-//
-//  ApexCrossPlayScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct ApexCrossPlayScrollView: View {
@@ -78,3 +71,4 @@ struct ApexCrossPlayScrollView_Previews: PreviewProvider {
         ApexCrossPlayScrollView(status: ApexService().serverStatusMock)
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  ServerStatusRegionsView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct ServerStatusRegionsView: View {
@@ -34,3 +27,4 @@ struct ServerStatusRegionsHStackView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+

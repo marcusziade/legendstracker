@@ -1,10 +1,3 @@
-//
-//  MapRotationView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Kingfisher
 import SwiftUI
 
@@ -61,3 +54,4 @@ struct MapRotationView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+

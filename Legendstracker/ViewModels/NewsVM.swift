@@ -1,10 +1,3 @@
-//
-//  NewsVM.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 
 final class NewsVM: ObservableObject {
@@ -63,3 +56,4 @@ final class NewsVM: ObservableObject {
         return vm
     }
 }
+

@@ -1,14 +1,3 @@
-//
-//  StoreProduct.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let storeProductsResponse = try? newJSONDecoder().decode(StoreProductsResponse.self, from: jsonData)
-
 import Foundation
 
 struct StoreProduct: Codable, Identifiable {
@@ -79,3 +68,4 @@ enum Ref: String, Codable {
     case apexCoins = "Apex Coins"
     case legendTokens = "Legend Tokens"
 }
+

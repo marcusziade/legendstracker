@@ -1,10 +1,3 @@
-//
-//  ApexService.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-
 import Foundation
 
 /// https://apexlegendsapi.com/#introduction
@@ -80,3 +73,4 @@ final class ApexService {
         return d
     }()
 }
+

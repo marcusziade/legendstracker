@@ -1,10 +1,3 @@
-//
-//  StoreView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct StoreView: View {
@@ -38,3 +31,4 @@ struct StoreView_Previews: PreviewProvider {
         StoreView(model: StoreVM.mock)
     }
 }
+

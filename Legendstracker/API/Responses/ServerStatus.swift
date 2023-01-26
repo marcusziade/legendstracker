@@ -1,13 +1,3 @@
-//
-//  ServerStatus.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let serverStatus = try? newJSONDecoder().decode(ServerStatus.self, from: jsonData)
-
 import Foundation
 import SwiftUI
 
@@ -124,3 +114,4 @@ struct SelfCoreTest: Codable {
         case xboxAPI = "Xbox-API"
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  EANovaFusionScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct EANovaFusionScrollView: View {
@@ -79,3 +72,4 @@ struct EANovaFusionScrollView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+

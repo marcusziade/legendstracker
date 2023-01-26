@@ -1,9 +1,3 @@
-//
-//  NewsArticle.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
 import Foundation
 
 struct NewsArticle: Codable, Identifiable {
@@ -21,3 +15,4 @@ struct NewsArticle: Codable, Identifiable {
         case shortDesc = "short_desc"
     }
 }
+

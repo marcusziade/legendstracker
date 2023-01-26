@@ -1,10 +1,3 @@
-//
-//  UIDForPlayerNameRequest.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 
 extension ApexService {
@@ -21,3 +14,4 @@ extension ApexService {
         }
     }
 }
+

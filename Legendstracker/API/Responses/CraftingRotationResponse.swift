@@ -1,14 +1,3 @@
-//
-//  CraftingRotationResponse.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let craftingRotationResponse = try? newJSONDecoder().decode(CraftingRotationResponse.self, from: jsonData)
-
 import Foundation
 
 struct CraftingRotationResponse: Codable {
@@ -33,3 +22,4 @@ struct ItemType: Codable {
     let asset: String
     let rarityHex: String
 }
+

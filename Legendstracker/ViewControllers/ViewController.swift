@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -21,3 +14,4 @@ class ViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

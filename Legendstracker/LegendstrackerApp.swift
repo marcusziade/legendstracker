@@ -1,10 +1,3 @@
-//
-//  LegendstrackerApp.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 28.9.2022.
-//
-
 import SwiftUI
 
 @main
@@ -56,3 +49,4 @@ struct NewsVCView: UIViewControllerRepresentable {
 
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
 }
+

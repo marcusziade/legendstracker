@@ -1,10 +1,3 @@
-//
-//  CoreStatusScrollView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 
 struct CoreStatusScrollView: View {
@@ -78,3 +71,4 @@ struct CoreStatusScrollView_Previews: PreviewProvider {
         CoreStatusScrollView(status: ApexService().serverStatusMock)
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  UITableView+Ext.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -26,3 +19,4 @@ public extension UITableView {
         return dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(header)) as! T
     }
 }
+

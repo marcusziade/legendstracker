@@ -1,10 +1,3 @@
-//
-//  SearchPlayerVM.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Combine
 import Foundation
 
@@ -81,3 +74,4 @@ final class SearchPlayerVM: ObservableObject {
         return vm
     }
 }
+

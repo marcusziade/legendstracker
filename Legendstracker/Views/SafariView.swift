@@ -1,10 +1,3 @@
-//
-//  SafariView.swift
-//  Legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import SwiftUI
 import SafariServices
 
@@ -20,3 +13,4 @@ struct SafariView: UIViewControllerRepresentable {
     
     func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {}
 }
+

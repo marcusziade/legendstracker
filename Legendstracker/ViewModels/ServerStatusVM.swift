@@ -1,10 +1,3 @@
-//
-//  ServerStatusVM.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 29.9.2022.
-//
-
 import Foundation
 
 final class ServerStatusVM: ObservableObject {
@@ -62,3 +55,4 @@ final class ServerStatusVM: ObservableObject {
         return vm
     }
 }
+
