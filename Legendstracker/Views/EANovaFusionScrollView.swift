@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct EANovaFusionScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("EA Nova Fusion")
@@ -72,4 +72,3 @@ struct EANovaFusionScrollView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

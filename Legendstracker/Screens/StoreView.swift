@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct StoreView: View {
-    
+
     @ObservedObject var model: StoreVM
-    
+
     var body: some View {
         switch model.state {
         case .loading:
@@ -31,4 +31,3 @@ struct StoreView_Previews: PreviewProvider {
         StoreView(model: StoreVM.mock)
     }
 }
-

@@ -2,9 +2,9 @@ import Kingfisher
 import SwiftUI
 
 struct SearchPlayerView: View {
-    
+
     @ObservedObject var model: SearchPlayerVM
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -13,7 +13,10 @@ struct SearchPlayerView: View {
                     ZStack {
                         PlayerGlobalInfoView(player: ApexService().playerMock)
                             .redacted(reason: .placeholder)
-                        VStack { ProgressView(); Spacer() }
+                        VStack {
+                            ProgressView()
+                            Spacer()
+                        }
                     }
 
                 case .error(message: let errorMessage):
@@ -46,4 +49,3 @@ struct SearchPlayerView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

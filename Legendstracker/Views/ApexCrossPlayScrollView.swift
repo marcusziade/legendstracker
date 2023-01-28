@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct ApexCrossPlayScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("Crossplay")
@@ -71,4 +71,3 @@ struct ApexCrossPlayScrollView_Previews: PreviewProvider {
         ApexCrossPlayScrollView(status: ApexService().serverStatusMock)
     }
 }
-

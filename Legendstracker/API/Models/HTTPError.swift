@@ -22,7 +22,7 @@ enum HTTPError: Error {
     case url
     /// An unknown error occured.
     case unknown
-    
+
     var caption: String {
         switch self {
         case .retry:
@@ -48,4 +48,3 @@ enum HTTPError: Error {
         }
     }
 }
-

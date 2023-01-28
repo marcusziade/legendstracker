@@ -14,14 +14,15 @@ extension ApexService {
 
         return try await player(forID: query)
     }
-    
+
     /// To obtain a `Player` for name.
     private func player(forName name: String) async throws -> ApexPlayer {
         components.path = "/bridge"
-        components.queryItems?.append(contentsOf: [
-            URLQueryItem(name: "player", value: name),
-            URLQueryItem(name: "platform", value: "PC"),
-        ])
+        components.queryItems?
+            .append(contentsOf: [
+                URLQueryItem(name: "player", value: name),
+                URLQueryItem(name: "platform", value: "PC"),
+            ])
 
         do {
             let player: ApexPlayer = try await request(with: components.url)
@@ -30,7 +31,7 @@ extension ApexService {
             throw error
         }
     }
-    
+
     /// To obtain a `Player` for id.
     private func player(forID id: String) async throws -> ApexPlayer {
         components.path = "/bridge"
@@ -47,10 +48,9 @@ extension ApexService {
             throw error
         }
     }
-    
+
     var playerMock: ApexPlayer {
         let p: ApexPlayer = try! getMockData(forFileName: "ApexPlayerMock", filetype: "json")
         return p
     }
 }
-

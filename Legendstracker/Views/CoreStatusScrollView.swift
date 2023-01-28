@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct CoreStatusScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("Core")
@@ -71,4 +71,3 @@ struct CoreStatusScrollView_Previews: PreviewProvider {
         CoreStatusScrollView(status: ApexService().serverStatusMock)
     }
 }
-

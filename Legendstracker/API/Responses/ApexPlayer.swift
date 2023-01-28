@@ -175,7 +175,7 @@ struct ApexPlayer: Codable {
 
 struct Als: Codable {
     let isALSDataEnabled: Bool
-    
+
     enum CodingKeys: String, CodingKey {
         case isALSDataEnabled = "isALSDataEnabled"
     }
@@ -196,7 +196,7 @@ struct Global: Codable {
     let internalParsingVersion: Int
     let badges: [ApexItem]?
     let levelPrestige: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case uid = "uid"
@@ -222,7 +222,7 @@ struct Rank: Codable {
     let ladderPosPlatform: Int
     let rankImg: String
     let rankedSeason: String
-    
+
     enum CodingKeys: String, CodingKey {
         case rankScore = "rankScore"
         case rankName = "rankName"
@@ -236,7 +236,7 @@ struct Rank: Codable {
 struct ApexItem: Codable {
     let name: String?
     let value: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case value = "value"
@@ -247,7 +247,7 @@ struct Bans: Codable {
     let isActive: Bool
     let remainingSeconds: Int
     let lastBanReason: String
-    
+
     enum CodingKeys: String, CodingKey {
         case isActive = "isActive"
         case remainingSeconds = "remainingSeconds"
@@ -258,7 +258,7 @@ struct Bans: Codable {
 struct Battlepass: Codable {
     let level: String
     let history: [String: Int]
-    
+
     enum CodingKeys: String, CodingKey {
         case level = "level"
         case history = "history"
@@ -268,7 +268,7 @@ struct Battlepass: Codable {
 struct Legends: Codable {
     let selected: SelectedLegend
     let all: AllLegends
-    
+
     enum CodingKeys: String, CodingKey {
         case selected = "selected"
         case all = "all"
@@ -298,7 +298,7 @@ struct AllLegends: Codable {
     let madMaggie: Legend?
     let newcastle: Legend?
     let vantage: Legend?
-    
+
     enum CodingKeys: String, CodingKey {
         case revenant = "Revenant"
         case crypto = "Crypto"
@@ -327,7 +327,7 @@ struct AllLegends: Codable {
 
 struct Legend: Codable {
     let imgAssets: ImgAssets
-    
+
     enum CodingKeys: String, CodingKey {
         case imgAssets = "ImgAssets"
     }
@@ -336,7 +336,7 @@ struct Legend: Codable {
 struct ImgAssets: Codable {
     let icon: String
     let banner: String
-    
+
     enum CodingKeys: String, CodingKey {
         case icon = "icon"
         case banner = "banner"
@@ -347,7 +347,7 @@ struct Bloodhound: Codable {
     let data: [BloodhoundDatum]?
     let gameInfo: BloodhoundGameInfo?
     let imgAssets: ImgAssets
-    
+
     enum CodingKeys: String, CodingKey {
         case data = "data"
         case gameInfo = "gameInfo"
@@ -369,7 +369,7 @@ struct BloodhoundDatum: Codable {
 
 struct BloodhoundGameInfo: Codable {
     let badges: [ApexItem]?
-    
+
     enum CodingKeys: String, CodingKey {
         case badges = "badges"
     }
@@ -380,7 +380,7 @@ struct SelectedLegend: Codable {
     let data: [SelectedDatum]?
     let gameInfo: SelectedGameInfo
     let imgAssets: ImgAssets
-    
+
     enum CodingKeys: String, CodingKey {
         case legendName = "LegendName"
         case data = "data"
@@ -394,7 +394,7 @@ struct SelectedDatum: Codable {
     let value: Int
     let key: String
     let global: Bool
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case value = "value"
@@ -413,7 +413,7 @@ struct SelectedGameInfo: Codable {
     let intro: String
     let introRarity: String
     let badges: [Badge]?
-    
+
     enum CodingKeys: String, CodingKey {
         case skin = "skin"
         case skinRarity = "skinRarity"
@@ -431,7 +431,7 @@ struct Badge: Codable {
     let name: String?
     let value: Int
     let category: String
-    
+
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case value = "value"
@@ -446,7 +446,7 @@ struct MozambiquehereInternal: Codable {
     let clusterID: String
     let rateLimit: RateLimit
     let clusterSrv: String
-    
+
     enum CodingKeys: String, CodingKey {
         case isNewToDB = "isNewToDB"
         case claimedBy = "claimedBy"
@@ -460,7 +460,7 @@ struct MozambiquehereInternal: Codable {
 struct RateLimit: Codable {
     let maxPerSecond: Int
     let currentReq: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case maxPerSecond = "max_per_second"
         case currentReq = "current_req"
@@ -477,7 +477,7 @@ struct Realtime: Codable {
     let currentState: String
     let currentStateSinceTimestamp: Int
     let currentStateAsText: String
-    
+
     enum CodingKeys: String, CodingKey {
         case lobbyState = "lobbyState"
         case isOnline = "isOnline"
@@ -496,7 +496,7 @@ struct Total: Codable {
     let enemiesScanned: ApexItem?
     let specialEventKills: ApexItem?
     let kd: Kd?
-    
+
     enum CodingKeys: String, CodingKey {
         case damage = "damage"
         case enemiesScanned = "enemies_scanned"
@@ -508,10 +508,9 @@ struct Total: Codable {
 struct Kd: Codable {
     let value: String
     let name: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case value = "value"
         case name = "name"
     }
 }
-

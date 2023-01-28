@@ -5,7 +5,9 @@ import UIKit
 
 final class NewsVC: ViewController {
 
-    init(model: NewsVM) {
+    init(
+        model: NewsVM
+    ) {
         self.model = model
         super.init()
     }
@@ -138,8 +140,8 @@ extension NewsVC: UITableViewDelegate {
         case .loading: break
         case .error(message: _): break
         case .result(news: let articles):
-            present(SFSafariViewController(url: articles[indexPath.row].link, configuration: safariConfig), animated: true)
+            present(
+                SFSafariViewController(url: articles[indexPath.row].link, configuration: safariConfig), animated: true)
         }
     }
 }
-

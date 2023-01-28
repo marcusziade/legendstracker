@@ -2,18 +2,20 @@ import Combine
 import Foundation
 
 final class SearchPlayerVM: ObservableObject {
-    
+
     enum State {
         case loading
         case error(message: String)
         case result(player: ApexPlayer)
         case empty
     }
-    
+
     @Published var state: State = .empty
     @Published var searchQuery: String = ""
-    
-    init(service: ApexService) {
+
+    init(
+        service: ApexService
+    ) {
         self.service = service
 
         $searchQuery
@@ -36,14 +38,14 @@ final class SearchPlayerVM: ObservableObject {
     func refresh() async { await player() }
 
     // MARK: Private
-    
+
     private var cancellables = Set<AnyCancellable>()
-    
+
     private let service: ApexService
-    
+
     @MainActor private func player() async {
         state = .loading
-        
+
         var retries = 0
         while retries < 5 {
             do {
@@ -67,11 +69,10 @@ final class SearchPlayerVM: ObservableObject {
             }
         }
     }
-    
+
     static var mock: SearchPlayerVM {
         let vm = SearchPlayerVM(service: ApexService())
         vm.state = .result(player: ApexService().playerMock)
         return vm
     }
 }
-

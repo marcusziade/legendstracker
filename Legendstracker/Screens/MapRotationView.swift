@@ -2,18 +2,18 @@ import Kingfisher
 import SwiftUI
 
 struct MapRotationView: View {
-    
+
     @ObservedObject var model: MapRotationVM
-    
+
     var body: some View {
         switch model.state {
-            
+
         case .loading:
             ProgressView()
-            
+
         case .error(message: let errorMessage):
             Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
-            
+
         case .result(rotation: let r):
             ZStack {
                 GeometryReader { p in
@@ -27,7 +27,7 @@ struct MapRotationView: View {
                         .frame(height: p.size.height + 10)
                         .ignoresSafeArea()
                 }
-                
+
                 VStack(spacing: 0) {
                     Spacer()
                     MapInfoView(isCurrent: true, rotation: r)
@@ -54,4 +54,3 @@ struct MapRotationView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

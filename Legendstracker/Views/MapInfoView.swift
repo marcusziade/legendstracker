@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct MapInfoView: View {
-        
+
     let isCurrent: Bool
     let rotation: MapRotationResponse
-    
+
     var body: some View {
         VStack {
             Image(systemName: isCurrent ? "play.fill" : "text.insert")
@@ -32,4 +32,3 @@ struct MapInfoView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

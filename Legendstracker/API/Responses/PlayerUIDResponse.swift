@@ -6,4 +6,3 @@ struct PlayerUIDResponse: Codable {
     let pid: String
     let avatar: String
 }
-

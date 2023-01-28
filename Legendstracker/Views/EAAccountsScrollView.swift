@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct EAAccountsScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("EA Accounts")
@@ -71,4 +71,3 @@ struct EAAccountsScrollView_Previews: PreviewProvider {
         EAAccountsScrollView(status: ApexService().serverStatusMock)
     }
 }
-

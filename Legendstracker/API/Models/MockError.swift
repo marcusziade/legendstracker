@@ -2,7 +2,7 @@ import Foundation
 
 enum MockError: Error {
     case path, data, decode
-    
+
     var description: String {
         switch self {
         case .path:
@@ -14,4 +14,3 @@ enum MockError: Error {
         }
     }
 }
-

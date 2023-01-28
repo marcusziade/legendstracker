@@ -15,4 +15,3 @@ final class NavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
     }
 }
-

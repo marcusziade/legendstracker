@@ -18,4 +18,3 @@ extension Configurable {
 extension NSObject: Configurable {}
 extension JSONDecoder: Configurable {}
 extension JSONEncoder: Configurable {}
-

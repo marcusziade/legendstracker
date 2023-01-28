@@ -160,4 +160,3 @@ struct OwnedLegendsView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct OtherPlatformsScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("Other platforms")
@@ -36,4 +36,3 @@ struct OtherPlatformsScrollView_Previews: PreviewProvider {
         OtherPlatformsScrollView(status: ApexService().serverStatusMock)
     }
 }
-

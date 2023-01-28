@@ -19,4 +19,3 @@ struct PC: Codable {
     let updateTimestamp: Int
     let totalMastersAndPreds: Int
 }
-

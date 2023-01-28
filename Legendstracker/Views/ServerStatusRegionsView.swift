@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct ServerStatusRegionsView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
@@ -27,4 +27,3 @@ struct ServerStatusRegionsHStackView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-

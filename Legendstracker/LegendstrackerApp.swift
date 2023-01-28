@@ -2,13 +2,13 @@ import SwiftUI
 
 @main
 struct LegendstrackerApp: App {
-    
+
     @StateObject var searchPlayerViewModel = SearchPlayerVM(service: ApexService())
     @StateObject var newsViewModel = NewsVM(service: ApexService())
     @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
     @StateObject var mapRotationViewModel = MapRotationVM(service: ApexService())
     @StateObject var storeViewModel = StoreVM(service: ApexService())
-    
+
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -47,6 +47,5 @@ struct NewsVCView: UIViewControllerRepresentable {
         return NavigationController(rootVC: vc)
     }
 
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
 }
-

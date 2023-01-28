@@ -28,7 +28,8 @@ struct RankSectionView: View {
 struct RankSectionView_Previews: PreviewProvider {
     static var previews: some View {
         let p = ApexService().playerMock
-        RankSectionView(score: p.brRank.rankScore, rankName: p.brRank.rankName, rankDivision: p.brRank.rankDiv, seasonTitle: p.rankedBrSeasonTitle, thumbnail: URL(string: p.brRank.rankImg)!)
+        RankSectionView(
+            score: p.brRank.rankScore, rankName: p.brRank.rankName, rankDivision: p.brRank.rankDiv,
+            seasonTitle: p.rankedBrSeasonTitle, thumbnail: URL(string: p.brRank.rankImg)!)
     }
 }
-

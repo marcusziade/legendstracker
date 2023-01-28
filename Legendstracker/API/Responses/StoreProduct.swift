@@ -2,7 +2,7 @@ import Foundation
 
 struct StoreProduct: Codable, Identifiable {
     var id: String { offerID }
-    
+
     let title: String
     let desc: String
     let tag: String
@@ -15,7 +15,7 @@ struct StoreProduct: Codable, Identifiable {
     let offerID: String
     let asset: String
     let originalPrice: Int?
-    
+
     enum CodingKeys: String, CodingKey {
         case title = "title"
         case desc = "desc"
@@ -30,14 +30,14 @@ struct StoreProduct: Codable, Identifiable {
         case asset = "asset"
         case originalPrice = "originalPrice"
     }
-    
+
     var expireDateText: String {
         let date = Date(timeIntervalSince1970: TimeInterval(expireTimestamp))
         return dateFormatter.localizedString(for: date, relativeTo: Date.now)
     }
-    
+
     private let dateFormatter: RelativeDateTimeFormatter = {
-        let f  = RelativeDateTimeFormatter()
+        let f = RelativeDateTimeFormatter()
         return f
     }()
 }
@@ -46,7 +46,7 @@ struct Content: Codable {
     let ref: String
     let name: String
     let quantity: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case ref = "ref"
         case name = "name"
@@ -57,7 +57,7 @@ struct Content: Codable {
 struct Pricing: Codable {
     let ref: Ref
     let quantity: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case ref = "ref"
         case quantity = "quantity"
@@ -68,4 +68,3 @@ enum Ref: String, Codable {
     case apexCoins = "Apex Coins"
     case legendTokens = "Legend Tokens"
 }
-

@@ -1,31 +1,33 @@
 import Foundation
 
 final class NewsVM: ObservableObject {
-    
+
     enum State {
         case loading
         case result(news: [NewsArticle])
         case error(message: String)
     }
-    
+
     @Published var state: State = .loading
     @Published var showSafari = false
-    
-    init(service: ApexService) {
+
+    init(
+        service: ApexService
+    ) {
         self.service = service
-        
+
         Task { await news() }
     }
-    
+
     func refresh() async { await news() }
-    
+
     // MARK: Private
-    
+
     private let service: ApexService
-    
+
     @MainActor private func news() async {
         state = .loading
-        
+
         var retries = 0
         while retries < 5 {
             do {
@@ -49,11 +51,10 @@ final class NewsVM: ObservableObject {
             }
         }
     }
-    
+
     static var mock: NewsVM {
         let vm = NewsVM(service: ApexService())
         vm.state = .result(news: ApexService().newsMock)
         return vm
     }
 }
-

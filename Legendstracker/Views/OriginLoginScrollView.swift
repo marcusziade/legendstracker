@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct OriginLoginScrollView: View {
-    
+
     let status: ServerStatus
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("Origin login")
@@ -67,9 +67,8 @@ struct OriginLoginScrollView: View {
 }
 
 struct OriginLoginScrollView_Previews: PreviewProvider {
-    
+
     static var previews: some View {
         OriginLoginScrollView(status: ApexService().serverStatusMock)
     }
 }
-

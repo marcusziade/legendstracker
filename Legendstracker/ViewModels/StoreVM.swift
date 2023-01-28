@@ -1,7 +1,7 @@
 import Foundation
 
 final class StoreVM: ObservableObject {
-    
+
     enum State {
         case loading
         case error(message: String)
@@ -9,22 +9,24 @@ final class StoreVM: ObservableObject {
     }
 
     @Published var state: State = .loading
-    
-    init(service: ApexService) {
+
+    init(
+        service: ApexService
+    ) {
         self.service = service
-        
+
         Task { await storeProducts() }
     }
-    
+
     func refresh() async { await storeProducts() }
-    
+
     // MARK: Private
-    
+
     private let service: ApexService
-    
+
     @MainActor private func storeProducts() async {
         state = .loading
-        
+
         var retries = 0
         while retries < 5 {
             do {
@@ -48,11 +50,10 @@ final class StoreVM: ObservableObject {
             }
         }
     }
-    
+
     static var mock: StoreVM {
         let vm = StoreVM(service: ApexService())
         vm.state = .result(store: ApexService().storeMock)
         return vm
     }
 }
-

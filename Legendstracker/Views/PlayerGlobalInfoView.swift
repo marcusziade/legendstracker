@@ -33,14 +33,23 @@ struct PlayerGlobalInfoView: View {
                     .foregroundColor(player.isOnline ? .green : .red)
 
                 if player.isOnline {
-                    Label(player.isInGame ? "In-game" : "Idle", systemImage: player.isInGame ? "gamecontroller.fill" : "person.circle.fill")
-                        .foregroundColor(player.isInGame ? .green : .blue)
+                    Label(
+                        player.isInGame ? "In-game" : "Idle",
+                        systemImage: player.isInGame ? "gamecontroller.fill" : "person.circle.fill"
+                    )
+                    .foregroundColor(player.isInGame ? .green : .blue)
                     Label(player.lobbyState.capitalized, systemImage: player.isOnline ? "shareplay" : "shareplay.slash")
                         .foregroundColor(.blue)
-                    Label(player.isJoinable ? "Joinable" : "Private", systemImage: player.isJoinable ? "person.fill.checkmark" : "person.fill.xmark")
-                        .foregroundColor(.blue)
-                    Label(player.isPartyFull ? "Full party" : "Free slot in party", systemImage: player.isPartyFull ? "person.3.fill" : "person.3")
-                        .foregroundColor(player.isPartyFull ? .gray : .green)
+                    Label(
+                        player.isJoinable ? "Joinable" : "Private",
+                        systemImage: player.isJoinable ? "person.fill.checkmark" : "person.fill.xmark"
+                    )
+                    .foregroundColor(.blue)
+                    Label(
+                        player.isPartyFull ? "Full party" : "Free slot in party",
+                        systemImage: player.isPartyFull ? "person.3.fill" : "person.3"
+                    )
+                    .foregroundColor(player.isPartyFull ? .gray : .green)
                     Label(player.selectedLegendName, systemImage: "gamecontroller.fill")
                     HStack(alignment: .lastTextBaseline) {
                         Text(player.currentState.capitalized)
@@ -113,4 +122,3 @@ struct PlayerGlobalInfoView_Previews: PreviewProvider {
         PlayerGlobalInfoView(player: ApexService().playerMock)
     }
 }
-

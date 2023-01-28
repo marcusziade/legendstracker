@@ -1,30 +1,32 @@
 import Foundation
 
 final class ServerStatusVM: ObservableObject {
-    
+
     enum State {
         case loading
         case error(message: String)
         case result(status: ServerStatus)
     }
-    
+
     @Published var state: State = .loading
-    
-    init(service: ApexService) {
+
+    init(
+        service: ApexService
+    ) {
         self.service = service
-        
+
         Task { await serverStatus() }
     }
-    
+
     func refresh() async { await serverStatus() }
-    
+
     // MARK: Private
-    
+
     private let service: ApexService
-    
+
     @MainActor private func serverStatus() async {
         state = .loading
-        
+
         var retries = 0
         while retries < 5 {
             do {
@@ -48,11 +50,10 @@ final class ServerStatusVM: ObservableObject {
             }
         }
     }
-    
+
     static var mock: ServerStatusVM {
         let vm = ServerStatusVM(service: ApexService())
         vm.state = .result(status: ApexService().serverStatusMock)
         return vm
     }
 }
-

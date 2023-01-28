@@ -22,4 +22,3 @@ struct ItemType: Codable {
     let asset: String
     let rarityHex: String
 }
-

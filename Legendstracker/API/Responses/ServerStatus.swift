@@ -8,7 +8,7 @@ struct ServerStatus: Codable {
     let apexOauthCrossplay: Servers
     let selfCoreTest: SelfCoreTest
     let otherPlatforms: OtherPlatforms
-    
+
     enum CodingKeys: String, CodingKey {
         case originLogin = "Origin_login"
         case eaNovafusion = "EA_novafusion"
@@ -27,7 +27,7 @@ struct Servers: Codable {
     let usEast: Region
     let southAmerica: Region
     let asia: Region
-    
+
     enum CodingKeys: String, CodingKey {
         case euWest = "EU-West"
         case euEast = "EU-East"
@@ -44,7 +44,7 @@ struct Region: Codable {
     let httpCode: Int
     let responseTime: Int
     let queryTimestamp: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case status = "Status"
         case httpCode = "HTTPCode"
@@ -57,20 +57,20 @@ enum Status: String, Codable {
     case down = "DOWN"
     case slow = "SLOW"
     case up = "UP"
-    
+
     var color: Color {
         switch self {
         case .down: return .red
         case .slow: return .yellow
-        case .up:   return .green
+        case .up: return .green
         }
     }
-    
+
     var icon: String {
         switch self {
         case .down: return "xmark.icloud.fill"
         case .slow: return "exclamationmark.icloud.fill"
-        case .up:   return "checkmark.icloud.fill"
+        case .up: return "checkmark.icloud.fill"
         }
     }
 }
@@ -78,7 +78,7 @@ enum Status: String, Codable {
 struct OtherPlatforms: Codable {
     let playstationNetwork: PlaystationNetwork
     let xboxLive: PlaystationNetwork
-    
+
     enum CodingKeys: String, CodingKey {
         case playstationNetwork = "Playstation-Network"
         case xboxLive = "Xbox-Live"
@@ -88,7 +88,7 @@ struct OtherPlatforms: Codable {
 struct PlaystationNetwork: Codable {
     let status: Status
     let queryTimestamp: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case status = "Status"
         case queryTimestamp = "QueryTimestamp"
@@ -103,7 +103,7 @@ struct SelfCoreTest: Codable {
     let originAPI: Region
     let playstationAPI: Region
     let xboxAPI: Region
-    
+
     enum CodingKeys: String, CodingKey {
         case statusWebsite = "Status-website"
         case statsAPI = "Stats-API"
@@ -114,4 +114,3 @@ struct SelfCoreTest: Codable {
         case xboxAPI = "Xbox-API"
     }
 }
-

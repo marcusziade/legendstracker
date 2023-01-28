@@ -1,7 +1,7 @@
 import Foundation
 
 extension ApexService {
-    
+
     /// Get the Apex server status
     func serverStatus() async throws -> ServerStatus {
         components.path = "/servers"
@@ -13,10 +13,9 @@ extension ApexService {
             throw error
         }
     }
-    
+
     var serverStatusMock: ServerStatus {
         let s: ServerStatus = try! getMockData(forFileName: "ServerStatusMock", filetype: "json")
         return s
     }
 }
-

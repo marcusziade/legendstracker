@@ -19,4 +19,3 @@ public extension UITableView {
         return dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(header)) as! T
     }
 }
-
