@@ -12,7 +12,7 @@ final class SearchPlayerVM: ObservableObject {
 
     @Published var state: State = .empty
     @Published var searchQuery: String = ""
-    
+
     @Published var showPredatorsView = false
 
     init(

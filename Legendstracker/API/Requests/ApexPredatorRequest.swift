@@ -14,7 +14,7 @@ extension ApexService {
             throw error
         }
     }
-    
+
     var apexPredator_Mock: ApexPredatorResponse {
         let r: ApexPredatorResponse = try! getMockData(forFileName: "Apexpredator_Mock", filetype: "json")
         return r

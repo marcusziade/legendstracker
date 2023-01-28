@@ -1,16 +1,9 @@
-//
-//  ApexPredatorView.swift
-//  legendstracker
-//
-//  Created by Marcus Ziadé on 28.1.2023.
-//
-
 import SwiftUI
 
 struct ApexPredatorView: View {
-    
+
     @StateObject var model: ApexPredatorVM
-    
+
     var body: some View {
         switch model.state {
         case .loading:
@@ -36,7 +29,7 @@ struct ApexPredatorView: View {
                         Text(predators.x1TotalMastersAndPredsBR)
                     }
                 }
-                
+
                 Section("Arenas") {
                     VStack {
                         Image(systemName: "desktopcomputer")
@@ -54,7 +47,7 @@ struct ApexPredatorView: View {
                         Text(predators.x1TotalMastersAndPredsAP)
                     }
                 }
-                
+
                 Text(predators.timestampString)
             }
         }

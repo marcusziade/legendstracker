@@ -6,12 +6,12 @@ struct ApexPredatorResponse: Codable {
 }
 
 extension ApexPredatorResponse {
-    
+
     var timestampString: String {
         let date = Date(timeIntervalSince1970: TimeInterval(RP.PC.updateTimestamp))
         return DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .medium)
     }
-    
+
     // Battle royale
     var pcRequiredRP: String { String(RP.PC.val) }
     var pcTotalMastersAndPredsBR: String { String(RP.PC.totalMastersAndPreds) }
@@ -19,7 +19,7 @@ extension ApexPredatorResponse {
     var psTotalMastersAndPredsBR: String { String(RP.PS4.totalMastersAndPreds) }
     var x1RequiredRP: String { String(RP.X1.val) }
     var x1TotalMastersAndPredsBR: String { String(RP.X1.totalMastersAndPreds) }
-    
+
     // Arena
     var pcRequiredAP: String { String(AP.PC.val) }
     var pcTotalMastersAndPredsAP: String { String(AP.PC.totalMastersAndPreds) }

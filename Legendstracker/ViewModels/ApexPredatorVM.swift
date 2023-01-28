@@ -1,32 +1,32 @@
 import Foundation
 
 final class ApexPredatorVM: ObservableObject {
-    
+
     enum State {
         case loading
         case result(predators: ApexPredatorResponse)
         case error(message: String)
     }
-    
+
     @Published var state: State = .loading
-    
+
     init(
         service: ApexService
     ) {
         self.service = service
-        
+
         Task { await predators() }
     }
-    
+
     func refresh() async { await predators() }
-    
+
     // MARK: Private
-    
+
     private let service: ApexService
-    
+
     @MainActor private func predators() async {
         state = .loading
-        
+
         var retries = 0
         while retries < 5 {
             do {
@@ -50,7 +50,7 @@ final class ApexPredatorVM: ObservableObject {
             }
         }
     }
-    
+
     static var mock: ApexPredatorVM {
         let vm = ApexPredatorVM(service: ApexService())
         vm.state = .result(predators: ApexService().apexPredator_Mock)
