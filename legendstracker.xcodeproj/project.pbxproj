@@ -48,6 +48,9 @@
 		5A8085FF28E609F200691068 /* StoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8085FE28E609F200691068 /* StoreVM.swift */; };
 		5A80860128E60AC900691068 /* StoreMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A80860028E60AC900691068 /* StoreMock.json */; };
 		5A80860328E60B1C00691068 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80860228E60B1C00691068 /* StoreView.swift */; };
+		5A9DAB97298598CF00002D92 /* Apexpredator_Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */; };
+		5A9DAB992985A26900002D92 /* ApexPredatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */; };
+		5A9DAB9B2985A3D900002D92 /* ApexPredatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DAB9A2985A3D900002D92 /* ApexPredatorView.swift */; };
 		5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */; };
 		5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */; };
 		5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */; };
@@ -108,6 +111,9 @@
 		5A8085FE28E609F200691068 /* StoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVM.swift; sourceTree = "<group>"; };
 		5A80860028E60AC900691068 /* StoreMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StoreMock.json; sourceTree = "<group>"; };
 		5A80860228E60B1C00691068 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apexpredator_Mock.json; sourceTree = "<group>"; };
+		5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorVM.swift; sourceTree = "<group>"; };
+		5A9DAB9A2985A3D900002D92 /* ApexPredatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorView.swift; sourceTree = "<group>"; };
 		5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionsView.swift; sourceTree = "<group>"; };
 		5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionView.swift; sourceTree = "<group>"; };
 		5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginLoginScrollView.swift; sourceTree = "<group>"; };
@@ -256,6 +262,7 @@
 				5A80860028E60AC900691068 /* StoreMock.json */,
 				5A012ED128E61941001AB519 /* newsMock.json */,
 				5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */,
+				5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -264,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				5A06874628E4F8C90098E287 /* NewsVM.swift */,
+				5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */,
 				5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */,
 				5AC82D9828E56FE800A21051 /* MapRotationVM.swift */,
 				5A8085FE28E609F200691068 /* StoreVM.swift */,
@@ -279,6 +287,7 @@
 				5AC82D9A28E58F9000A21051 /* MapRotationView.swift */,
 				5A80860228E60B1C00691068 /* StoreView.swift */,
 				5A012ED728E61D1C001AB519 /* SearchPlayerView.swift */,
+				5A9DAB9A2985A3D900002D92 /* ApexPredatorView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -381,6 +390,7 @@
 				5A80860128E60AC900691068 /* StoreMock.json in Resources */,
 				5A012ED228E61941001AB519 /* newsMock.json in Resources */,
 				5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */,
+				5A9DAB97298598CF00002D92 /* Apexpredator_Mock.json in Resources */,
 				5A012ED428E61BF5001AB519 /* ApexPlayerMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC82D8F28E5634B00A21051 /* EANovaFusionScrollView.swift in Sources */,
+				5A9DAB992985A26900002D92 /* ApexPredatorVM.swift in Sources */,
 				5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */,
 				5A06872D28E4DF080098E287 /* ApexService.swift in Sources */,
 				5AF3E7EB28E78C880048C987 /* OwnedLegendsView.swift in Sources */,
@@ -425,6 +436,7 @@
 				5A8085FF28E609F200691068 /* StoreVM.swift in Sources */,
 				5A06872728E4D5A30098E287 /* MapRotationResponse.swift in Sources */,
 				5A06873A28E4F0780098E287 /* StoreRequest.swift in Sources */,
+				5A9DAB9B2985A3D900002D92 /* ApexPredatorView.swift in Sources */,
 				5A06872B28E4D6490098E287 /* CraftingRotationResponse.swift in Sources */,
 				5A06871D28E4CE0C0098E287 /* ApexPlayer.swift in Sources */,
 				5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */,

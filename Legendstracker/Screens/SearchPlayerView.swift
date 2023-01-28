@@ -36,6 +36,16 @@ struct SearchPlayerView: View {
                     Text("No search query").fontWeight(.black)
                     PlayerGlobalInfoView(player: ApexService().playerMock)
                         .redacted(reason: .placeholder)
+                        .toolbar {
+                            Button {
+                                model.showPredatorsView = true
+                            } label: {
+                                Text("Pred")
+                            }
+                        }
+                        .sheet(isPresented: $model.showPredatorsView) {
+                            ApexPredatorView(model: ApexPredatorVM(service: ApexService()))
+                        }
                 }
             }
         }
