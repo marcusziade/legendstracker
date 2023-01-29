@@ -11,39 +11,44 @@ struct MapRotationView: View {
         case .loading:
             ProgressView()
 
-        case .error(message: let errorMessage):
+        case .error(let errorMessage):
             Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
 
-        case .result(rotation: let r):
-            ZStack {
-                GeometryReader { p in
-                    KFImage(URL(string: r.current.asset))
-                        .placeholder {
-                            ProgressView("Loading...")
-                        }
-                        .resizable()
-                        .scaledToFill()
-                        // There's a small black bar at the bottom of the iPhone 8. +10 fixes it.
-                        .frame(height: p.size.height + 10)
-                        .ignoresSafeArea()
+        case .result(let map, let crafting):
+            TabView {
+                ZStack {
+                    GeometryReader { p in
+                        KFImage(URL(string: map.current.asset))
+                            .resizable()
+                            .scaledToFill()
+                            .ignoresSafeArea()
+                    }
+                    
+                    VStack(spacing: 0) {
+                        Spacer()
+                        MapInfoView(isCurrent: true, rotation: map)
+                        Spacer()
+                        RoundedRectangle(cornerRadius: 0)
+                            .frame(height: 2)
+                        Spacer()
+                        MapInfoView(isCurrent: false, rotation: map)
+                        Spacer()
+                    }
+                    .foregroundColor(.white)
+                    .shadow(radius: 5)
+                    .shadow(radius: 5)
+                    .shadow(radius: 5)
                 }
-
-                VStack(spacing: 0) {
-                    Spacer()
-                    MapInfoView(isCurrent: true, rotation: r)
-                    Spacer()
-                    RoundedRectangle(cornerRadius: 0)
-                        .frame(height: 2)
-                    Spacer()
-                    MapInfoView(isCurrent: false, rotation: r)
-                    Spacer()
+                .ignoresSafeArea()
+                
+                List(crafting, id: \.self) { component in
+                    Section(component.bundleType) {
+                        CraftingRow(model: component)
+                    }
                 }
-                .foregroundColor(.white)
-                .shadow(radius: 5)
-                .shadow(radius: 5)
-                .shadow(radius: 5)
             }
-            .ignoresSafeArea()
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .ignoresSafeArea(edges: .top)
         }
     }
 }

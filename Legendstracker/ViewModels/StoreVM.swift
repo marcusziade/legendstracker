@@ -38,7 +38,6 @@ final class StoreVM: ObservableObject {
                     // Delay next try with a second. The ratelimit is 2 requests / second.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         retries += 1
-                        debugPrint("ratelimit shit")
                     }
                 default:
                     state = .error(message: error.caption)
