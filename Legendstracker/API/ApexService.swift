@@ -11,7 +11,7 @@ final class ApexService {
         return c
     }()
 
-    /// Make a request to the F1 API and return the chosen `Codable` type.
+    /// Make a request to the Apex API and return the chosen `Codable` type.
     /// - Parameter url: Pass in a predefined URL.
     /// - Returns: A decoded type that conforms to Codable.
     func request<T: Codable>(with url: URL?) async throws -> T {
