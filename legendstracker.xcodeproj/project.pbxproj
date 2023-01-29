@@ -51,6 +51,7 @@
 		5A9DAB97298598CF00002D92 /* Apexpredator_Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */; };
 		5A9DAB992985A26900002D92 /* ApexPredatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */; };
 		5A9DAB9B2985A3D900002D92 /* ApexPredatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DAB9A2985A3D900002D92 /* ApexPredatorView.swift */; };
+		5A9DAB9D29860EDE00002D92 /* crafting_rotation_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DAB9C29860EDE00002D92 /* crafting_rotation_mock.json */; };
 		5AC82D8928E5582500A21051 /* ServerStatusRegionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */; };
 		5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */; };
 		5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */; };
@@ -114,6 +115,7 @@
 		5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apexpredator_Mock.json; sourceTree = "<group>"; };
 		5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorVM.swift; sourceTree = "<group>"; };
 		5A9DAB9A2985A3D900002D92 /* ApexPredatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorView.swift; sourceTree = "<group>"; };
+		5A9DAB9C29860EDE00002D92 /* crafting_rotation_mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = crafting_rotation_mock.json; sourceTree = "<group>"; };
 		5AC82D8828E5582500A21051 /* ServerStatusRegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionsView.swift; sourceTree = "<group>"; };
 		5AC82D8A28E55B5900A21051 /* ServerStatusRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusRegionView.swift; sourceTree = "<group>"; };
 		5AC82D8C28E562DC00A21051 /* OriginLoginScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginLoginScrollView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				5A012ED128E61941001AB519 /* newsMock.json */,
 				5A012ED328E61BF5001AB519 /* ApexPlayerMock.json */,
 				5A9DAB96298598CF00002D92 /* Apexpredator_Mock.json */,
+				5A9DAB9C29860EDE00002D92 /* crafting_rotation_mock.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				5A6FAFAE28E5484900616E00 /* ServerStatusMock.json in Resources */,
 				5A80860128E60AC900691068 /* StoreMock.json in Resources */,
 				5A012ED228E61941001AB519 /* newsMock.json in Resources */,
+				5A9DAB9D29860EDE00002D92 /* crafting_rotation_mock.json in Resources */,
 				5AC82D9D28E590DC00A21051 /* MapRotationResponse_Mock.json in Resources */,
 				5A9DAB97298598CF00002D92 /* Apexpredator_Mock.json in Resources */,
 				5A012ED428E61BF5001AB519 /* ApexPlayerMock.json in Resources */,
