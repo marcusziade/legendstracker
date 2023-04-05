@@ -277,13 +277,13 @@
 		5A06874528E4F8B60098E287 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5AEE1EE729DD8DFB0086AFEC /* Loadable.swift */,
 				5A06874628E4F8C90098E287 /* NewsVM.swift */,
 				5A9DAB982985A26900002D92 /* ApexPredatorVM.swift */,
 				5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */,
 				5AC82D9828E56FE800A21051 /* MapRotationVM.swift */,
 				5A8085FE28E609F200691068 /* StoreVM.swift */,
 				5A012ED528E61C47001AB519 /* SearchPlayerVM.swift */,
-				5AEE1EE729DD8DFB0086AFEC /* Loadable.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
