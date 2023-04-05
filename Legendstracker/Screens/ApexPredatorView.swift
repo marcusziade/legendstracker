@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ApexPredatorView: View {
 
-    @StateObject var model: ApexPredatorVM
+    @StateObject var model = ApexPredatorVM(service: ApexService())
 
     var body: some View {
         switch model.state {

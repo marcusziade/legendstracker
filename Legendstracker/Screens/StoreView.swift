@@ -2,7 +2,7 @@ import SwiftUI
 
 struct StoreView: View {
 
-    @ObservedObject var model: StoreVM
+    @StateObject var model = StoreVM(service: ApexService())
 
     var body: some View {
         switch model.state {
