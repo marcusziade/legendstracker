@@ -51,9 +51,7 @@ struct ApexPredatorView: View {
                 Text(predators.timestampString)
             }
         case .empty:
-            Text("-")
-                .fontWeight(.black)
-                .font(.largeTitle)
+            EmptyView()
         }
     }
 }

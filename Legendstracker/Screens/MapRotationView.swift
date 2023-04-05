@@ -51,9 +51,7 @@ struct MapRotationView: View {
             .ignoresSafeArea(edges: .top)
             
         case .empty:
-            Text("-")
-                .fontWeight(.black)
-                .font(.largeTitle)
+            EmptyView()
         }
     }
 }

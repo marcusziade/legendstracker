@@ -23,9 +23,7 @@ struct StoreView: View {
                 .refreshable { await model.refresh() }
             }
         case .empty:
-            Text("-")
-                .fontWeight(.black)
-                .font(.largeTitle)
+            EmptyView()
         }
     }
 }
