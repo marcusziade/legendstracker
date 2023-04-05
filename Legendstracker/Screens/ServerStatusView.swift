@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ServerStatusView: View {
 
-    @ObservedObject var model: ServerStatusVM
+    @StateObject var model = ServerStatusVM(service: ApexService())
 
     var body: some View {
         switch model.state {

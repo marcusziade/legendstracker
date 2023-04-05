@@ -3,7 +3,7 @@ import SwiftUI
 
 struct SearchPlayerView: View {
 
-    @ObservedObject var model: SearchPlayerVM
+    @StateObject var model = SearchPlayerVM(service: ApexService())
 
     var body: some View {
         NavigationView {

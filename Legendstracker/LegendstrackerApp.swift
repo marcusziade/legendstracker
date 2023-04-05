@@ -3,32 +3,26 @@ import SwiftUI
 @main
 struct LegendstrackerApp: App {
 
-    @StateObject var searchPlayerViewModel = SearchPlayerVM(service: ApexService())
-    @StateObject var newsViewModel = NewsVM(service: ApexService())
-    @StateObject var serverStatusViewModel = ServerStatusVM(service: ApexService())
-    @StateObject var mapRotationViewModel = MapRotationVM(service: ApexService())
-    @StateObject var storeViewModel = StoreVM(service: ApexService())
-
     var body: some Scene {
         WindowGroup {
             TabView {
-                SearchPlayerView(model: searchPlayerViewModel)
+                SearchPlayerView()
                     .tabItem {
                         Label("Search", systemImage: "doc.text.magnifyingglass")
                     }
-                NewsVCView(model: newsViewModel)
+                NewsVCView()
                     .tabItem {
                         Label("News", systemImage: "newspaper.fill")
                     }
-                ServerStatusView(model: serverStatusViewModel)
+                ServerStatusView()
                     .tabItem {
                         Label("Status", systemImage: "network")
                     }
-                MapRotationView(model: mapRotationViewModel)
+                MapRotationView()
                     .tabItem {
                         Label("Map", systemImage: "map")
                     }
-                StoreView(model: storeViewModel)
+                StoreView()
                     .tabItem {
                         Label("Store", systemImage: "bag")
                     }
@@ -39,11 +33,8 @@ struct LegendstrackerApp: App {
 
 struct NewsVCView: UIViewControllerRepresentable {
 
-    let model: NewsVM
-
     func makeUIViewController(context: Context) -> some NavigationController {
-        let vm = model
-        let vc = NewsVC(model: vm)
+        let vc = NewsVC()
         return NavigationController(rootVC: vc)
     }
 
