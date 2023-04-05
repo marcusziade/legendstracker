@@ -15,6 +15,11 @@ struct ServerStatusView: View {
 
         case .result(let status):
             ServerStatusRegionsView(status: status)
+            
+        case .empty:
+            Text("-")
+                .fontWeight(.black)
+                .font(.largeTitle)
         }
     }
 }

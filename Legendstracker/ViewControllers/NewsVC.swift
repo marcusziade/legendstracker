@@ -43,11 +43,11 @@ final class NewsVC: ViewController {
                     ac.addAction(.init(title: "OK", style: .default))
                     present(ac, animated: true)
 
-                case .result(news: _):
+                case .result(news: _), .empty:
                     loadingView.stopAnimating()
                     DispatchQueue.main.async { [self] in
                         tableView.reloadData()
-                    }
+                    }                    
                 }
             }
             .store(in: &cancellables)
@@ -100,9 +100,7 @@ extension NewsVC: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch model.state {
-        case .loading:
-            return 1
-        case .error(message: _):
+        case .loading, .error(_), .empty:
             return 1
         case .result(news: let articles):
             return articles.count
@@ -129,6 +127,10 @@ extension NewsVC: UITableViewDataSource {
         case .result(news: let articles):
             articleCell.configure(with: articles[indexPath.row])
             return articleCell
+        case .empty:
+            basicConfig.text = "Unknown error"
+            basicCell.contentConfiguration = basicConfig
+            return basicCell
         }
     }
 }
@@ -137,8 +139,7 @@ extension NewsVC: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch model.state {
-        case .loading: break
-        case .error(message: _): break
+        case .empty, .loading, .error(_): break
         case .result(news: let articles):
             present(
                 SFSafariViewController(url: articles[indexPath.row].link, configuration: safariConfig), animated: true)
