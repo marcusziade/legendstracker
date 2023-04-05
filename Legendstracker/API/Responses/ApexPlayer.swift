@@ -12,15 +12,29 @@ struct ApexPlayer: Codable {
     var platform: String { global?.platform ?? "–" }
     /// The player account level.
     var level: Int { global?.level ?? 0 }
-    /// The total percentage earned of next rank up.
-    var toNextLevelPrecent: Int { global?.toNextLevelPercent ?? 0 }
-    /// The title of the BR season.
+    /// The percentage of progress towards the next rank in the game.
+    var toNextLevelPrecent: Int {
+        global?.toNextLevelPercent ?? 0
+    }
+    
+    /// The title of the current Battle Royale (BR) season in the game.
     var rankedBrSeasonTitle: String {
         brRank.rankedSeason.replacingOccurrences(of: "_", with: " ").capitalized
     }
-    /// The title of the Arena season.
+    
+    /// The URL of the image associated with the player's current rank in the BR mode of the game.
+    var rankedBrRankImageURL: URL? {
+        URL(string: brRank.rankImg)
+    }
+    
+    /// The title of the current Arena season in the game.
     var rankedArenaSeasonTitle: String {
         arenaRank.rankedSeason.replacingOccurrences(of: "_", with: " ").capitalized
+    }
+    
+    /// The URL of the image associated with the player's current rank in the Arena mode of the game.
+    var rankedArenaRankImageURL: URL? {
+        URL(string: arenaRank.rankImg)
     }
     /// The player's Unique ID.
     var UID: String {

@@ -83,24 +83,28 @@ struct PlayerGlobalInfoView: View {
             // MARK: Ranks
 
             Group {
-                Section("BR Ranked") {
-                    RankSectionView(
-                        score: player.brRank.rankScore,
-                        rankName: player.brRank.rankName,
-                        rankDivision: player.brRank.rankDiv,
-                        seasonTitle: player.rankedBrSeasonTitle,
-                        thumbnail: URL(string: player.brRank.rankImg)!
-                    )
+                if player.rankedBrRankImageURL != nil {
+                    Section("BR Ranked") {
+                        RankSectionView(
+                            score: player.brRank.rankScore,
+                            rankName: player.brRank.rankName,
+                            rankDivision: player.brRank.rankDiv,
+                            seasonTitle: player.rankedBrSeasonTitle,
+                            thumbnail: player.rankedBrRankImageURL!
+                        )
+                    }
                 }
 
-                Section("Arena Ranked") {
-                    RankSectionView(
-                        score: player.arenaRank.rankScore,
-                        rankName: player.arenaRank.rankName,
-                        rankDivision: player.arenaRank.rankDiv,
-                        seasonTitle: player.rankedArenaSeasonTitle,
-                        thumbnail: URL(string: player.arenaRank.rankImg)!
-                    )
+                if player.rankedArenaRankImageURL != nil {
+                    Section("Arena Ranked") {
+                        RankSectionView(
+                            score: player.arenaRank.rankScore,
+                            rankName: player.arenaRank.rankName,
+                            rankDivision: player.arenaRank.rankDiv,
+                            seasonTitle: player.rankedArenaSeasonTitle,
+                            thumbnail: player.rankedArenaRankImageURL!
+                        )
+                    }
                 }
             }
             .listRowSeparator(.hidden)
