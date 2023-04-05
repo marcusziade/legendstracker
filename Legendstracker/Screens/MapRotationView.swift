@@ -14,11 +14,11 @@ struct MapRotationView: View {
         case .error(let errorMessage):
             Label(errorMessage, systemImage: "exclamationmark.triangle.fill")
 
-        case .result(let map, let crafting):
+        case .result(let result):
             TabView {
                 ZStack {
                     GeometryReader { p in
-                        KFImage(URL(string: map.current.asset))
+                        KFImage(URL(string: result.map.current.asset))
                             .resizable()
                             .scaledToFill()
                             .ignoresSafeArea()
@@ -26,12 +26,12 @@ struct MapRotationView: View {
                     
                     VStack(spacing: 0) {
                         Spacer()
-                        MapInfoView(isCurrent: true, rotation: map)
+                        MapInfoView(isCurrent: true, rotation: result.map)
                         Spacer()
                         RoundedRectangle(cornerRadius: 0)
                             .frame(height: 2)
                         Spacer()
-                        MapInfoView(isCurrent: false, rotation: map)
+                        MapInfoView(isCurrent: false, rotation: result.map)
                         Spacer()
                     }
                     .foregroundColor(.white)
@@ -41,7 +41,7 @@ struct MapRotationView: View {
                 }
                 .ignoresSafeArea()
                 
-                List(crafting, id: \.self) { component in
+                List(result.craftingComponents, id: \.self) { component in
                     Section(component.bundleType) {
                         CraftingRow(model: component)
                     }
@@ -49,6 +49,11 @@ struct MapRotationView: View {
             }
             .tabViewStyle(.page(indexDisplayMode: .always))
             .ignoresSafeArea(edges: .top)
+            
+        case .empty:
+            Text("-")
+                .fontWeight(.black)
+                .font(.largeTitle)
         }
     }
 }

@@ -22,6 +22,10 @@ struct StoreView: View {
                 .listStyle(.plain)
                 .refreshable { await model.refresh() }
             }
+        case .empty:
+            Text("-")
+                .fontWeight(.black)
+                .font(.largeTitle)
         }
     }
 }

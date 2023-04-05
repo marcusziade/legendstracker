@@ -1,14 +1,12 @@
 import Foundation
 
-final class ServerStatusVM: ObservableObject {
+final class ServerStatusVM: Loadable {
+        
+    typealias ResultType = ServerStatus
+    typealias ServiceType = ApexService
 
-    enum State {
-        case loading
-        case error(message: String)
-        case result(status: ServerStatus)
-    }
-
-    @Published var state: State = .loading
+    @Published var state: LoadableViewState<ServerStatus> = .loading
+    var service: ApexService
 
     init(
         service: ApexService
@@ -22,37 +20,13 @@ final class ServerStatusVM: ObservableObject {
 
     // MARK: Private
 
-    private let service: ApexService
-
     @MainActor private func serverStatus() async {
-        state = .loading
-
-        var retries = 0
-        while retries < 5 {
-            do {
-                state = .result(status: try await service.serverStatus())
-                break
-            } catch let error as HTTPError {
-                switch error {
-                case .rateLimit:
-                    // Delay next try with a second. The ratelimit is 2 requests / second.
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        retries += 1
-                    }
-                default:
-                    state = .error(message: error.caption)
-                    break
-                }
-            } catch {
-                state = .error(message: error.localizedDescription)
-                break
-            }
-        }
+        await loadResult(service.serverStatus)
     }
 
     static var mock: ServerStatusVM {
         let vm = ServerStatusVM(service: ApexService())
-        vm.state = .result(status: ApexService().serverStatusMock)
+        vm.state = .result(ApexService().serverStatusMock)
         return vm
     }
 }
