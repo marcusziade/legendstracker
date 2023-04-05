@@ -17,9 +17,7 @@ struct ServerStatusView: View {
             ServerStatusRegionsView(status: status)
             
         case .empty:
-            Text("-")
-                .fontWeight(.black)
-                .font(.largeTitle)
+            EmptyView()
         }
     }
 }
