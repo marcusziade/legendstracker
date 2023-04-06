@@ -67,6 +67,7 @@
 		5AC82DA228E5A96000A21051 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA128E5A96000A21051 /* View+Ext.swift */; };
 		5AC82DA628E5AEDD00A21051 /* MapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */; };
 		5AEE1EE829DD8DFB0086AFEC /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE1EE729DD8DFB0086AFEC /* Loadable.swift */; };
+		5AEE1EEC29DE4B770086AFEC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE1EEB29DE4B770086AFEC /* WebView.swift */; };
 		5AF3E7E928E7545E0048C987 /* PlayerGlobalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */; };
 		5AF3E7EB28E78C880048C987 /* OwnedLegendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */; };
 		5AF3E7ED28E795420048C987 /* RankSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3E7EC28E795420048C987 /* RankSectionView.swift */; };
@@ -133,6 +134,7 @@
 		5AC82DA128E5A96000A21051 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		5AC82DA528E5AEDD00A21051 /* MapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoView.swift; sourceTree = "<group>"; };
 		5AEE1EE729DD8DFB0086AFEC /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		5AEE1EEB29DE4B770086AFEC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		5AF3E7E828E7545E0048C987 /* PlayerGlobalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGlobalInfoView.swift; sourceTree = "<group>"; };
 		5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnedLegendsView.swift; sourceTree = "<group>"; };
 		5AF3E7EC28E795420048C987 /* RankSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankSectionView.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				5AF3E7EC28E795420048C987 /* RankSectionView.swift */,
 				5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */,
 				5A9DABA22986925A00002D92 /* CraftingRow.swift */,
+				5AEE1EEB29DE4B770086AFEC /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */,
 				5AC82D9928E56FE800A21051 /* MapRotationVM.swift in Sources */,
 				5A6FAFAC28E546ED00616E00 /* ServerStatusView.swift in Sources */,
+				5AEE1EEC29DE4B770086AFEC /* WebView.swift in Sources */,
 				5AC82D8D28E562DC00A21051 /* OriginLoginScrollView.swift in Sources */,
 				5AC82D8B28E55B5900A21051 /* ServerStatusRegionView.swift in Sources */,
 				5A06872128E4D1CE0098E287 /* StoreProduct.swift in Sources */,
