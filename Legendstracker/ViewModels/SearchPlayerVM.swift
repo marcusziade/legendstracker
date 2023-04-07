@@ -17,7 +17,6 @@ final class SearchPlayerVM: Loadable {
         self.service = service
 
         $searchQuery
-            .dropFirst()
             .debounce(for: 0.5, scheduler: DispatchQueue.main)
             .removeDuplicates()
             .map { query -> Bool in

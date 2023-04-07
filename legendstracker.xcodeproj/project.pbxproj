@@ -41,6 +41,7 @@
 		5A06874728E4F8C90098E287 /* NewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06874628E4F8C90098E287 /* NewsVM.swift */; };
 		5A06875528E5346A0098E287 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06875428E5346A0098E287 /* SafariView.swift */; };
 		5A06875828E537B00098E287 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5A06875728E537B00098E287 /* Kingfisher */; };
+		5A21DDBB29E033550079B739 /* ApexPlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A21DDBA29E033550079B739 /* ApexPlayerCard.swift */; };
 		5A6FAFAA28E5458C00616E00 /* ServerStatusVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */; };
 		5A6FAFAC28E546ED00616E00 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */; };
 		5A6FAFAE28E5484900616E00 /* ServerStatusMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A6FAFAD28E5484900616E00 /* ServerStatusMock.json */; };
@@ -108,6 +109,7 @@
 		5A06874328E4F4D40098E287 /* CraftingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRequest.swift; sourceTree = "<group>"; };
 		5A06874628E4F8C90098E287 /* NewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVM.swift; sourceTree = "<group>"; };
 		5A06875428E5346A0098E287 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		5A21DDBA29E033550079B739 /* ApexPlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPlayerCard.swift; sourceTree = "<group>"; };
 		5A6FAFA928E5458C00616E00 /* ServerStatusVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusVM.swift; sourceTree = "<group>"; };
 		5A6FAFAB28E546ED00616E00 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
 		5A6FAFAD28E5484900616E00 /* ServerStatusMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ServerStatusMock.json; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				5AF3E7EA28E78C880048C987 /* OwnedLegendsView.swift */,
 				5A9DABA22986925A00002D92 /* CraftingRow.swift */,
 				5AEE1EEB29DE4B770086AFEC /* WebView.swift */,
+				5A21DDBA29E033550079B739 /* ApexPlayerCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				5A06874428E4F4D40098E287 /* CraftingRequest.swift in Sources */,
 				5A012EE128E647B5001AB519 /* NavigationController.swift in Sources */,
 				5AC82D9728E5664B00A21051 /* OtherPlatformsScrollView.swift in Sources */,
+				5A21DDBB29E033550079B739 /* ApexPlayerCard.swift in Sources */,
 				5A06874228E4F44F0098E287 /* ApexPredatorRequest.swift in Sources */,
 				5A6FAFB028E54A6100616E00 /* MockError.swift in Sources */,
 				5A8085FF28E609F200691068 /* StoreVM.swift in Sources */,
