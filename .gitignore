@@ -92,3 +92,7 @@ iOSInjectionProject/
 Secrets
 
 legendstracker/Resources/Keys.swift
+
+# Neovim
+.nvim/
+BuildServer.json
