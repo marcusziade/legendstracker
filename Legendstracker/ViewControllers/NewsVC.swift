@@ -6,7 +6,7 @@ import UIKit
 final class NewsVC: ViewController {
 
     init(
-        model: NewsVM = NewsVM(service: ApexService())
+        model: NewsVM
     ) {
         self.model = model
         super.init()

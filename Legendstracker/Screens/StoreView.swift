@@ -2,7 +2,11 @@ import SwiftUI
 
 struct StoreView: View {
 
-    @StateObject var model = StoreVM(service: ApexService())
+    @StateObject var model: StoreVM
+    
+    init(model: StoreVM) {
+        self._model = StateObject(wrappedValue: model)
+    }
 
     var body: some View {
         switch model.state {

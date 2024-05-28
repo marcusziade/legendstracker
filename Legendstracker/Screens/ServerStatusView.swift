@@ -2,8 +2,12 @@ import SwiftUI
 
 struct ServerStatusView: View {
 
-    @StateObject var model = ServerStatusVM(service: ApexService())
-
+    @StateObject var model: ServerStatusVM
+    
+    init(model: ServerStatusVM) {
+        self._model = StateObject(wrappedValue: model)
+    }
+    
     var body: some View {
         switch model.state {
 

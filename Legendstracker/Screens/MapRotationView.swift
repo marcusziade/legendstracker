@@ -3,7 +3,11 @@ import SwiftUI
 
 struct MapRotationView: View {
 
-    @StateObject var model = MapRotationVM(service: ApexService())
+    @StateObject var model: MapRotationVM
+    
+    init(model: MapRotationVM) {
+        self._model = StateObject(wrappedValue: model)
+    }
 
     var body: some View {
         switch model.state {
